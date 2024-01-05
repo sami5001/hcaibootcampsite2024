@@ -29,11 +29,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Funded by{' '}
+            {' '}
             <Image
               src="/funded-by-nihr-logo.png"
               alt="Funded by NIHR Logo"
-              className="dark:invert"
+              className="dark:invert(10%)"
               width={100}
               height={24}
               priority
