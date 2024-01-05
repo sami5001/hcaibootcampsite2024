@@ -51,13 +51,14 @@ export default function Home() {
           height={500}
           priority
         />
-      </div>
-          <p className={`mb-3 text-xl font-medium`}>
+        <br/>
+        <p className={`mb-3 text-xl font-medium text-left`}>
             Let&apos;s build Medical AI together!
           </p>
-          <p className={`mb-3 text-2xl font-extrabold`}>
+          <p className={`mb-3 text-2xl font-extrabold text-left`}>
             March 25-29, 2024
           </p>
+      </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
