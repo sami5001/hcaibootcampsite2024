@@ -51,12 +51,13 @@ export default function Home() {
           height={500}
           priority
         />
+        <p>
         <h3 className={`mb-3 text-xl font-medium`}>
             Let's build Medical AI together!
         </h3>
         <h2 className={`mb-3 text-2xl font-extrabold`}>
             March 25-29, 2024
-        </h2>
+        </h2></p>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
