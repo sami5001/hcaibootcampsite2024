@@ -52,12 +52,12 @@ export default function Home() {
           priority
         />
       </div>
-          <h3 className={`mb-3 text-xl font-medium`}>
+          <p className={`mb-3 text-xl font-medium`}>
             Let&apos;s build Medical AI together!
-          </h3>
-          <h2 className={`mb-3 text-2xl font-extrabold`}>
+          </p>
+          <p className={`mb-3 text-2xl font-extrabold`}>
             March 25-29, 2024
-          </h2>
+          </p>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
