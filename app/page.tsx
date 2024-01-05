@@ -11,12 +11,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+          <h3 className={`mb-3 text-2xl font-semibold`}>
             Register your interest{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
-          </h2>
+          </h3>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             By filling out this form.
           </p>
@@ -31,8 +31,8 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="https://www.nihr.ac.uk/nihr-comms/images/visual-identity/logo/funded-by-nihr-logo.png"
+              alt="Funded by NIHR Logo"
               className="dark:invert"
               width={100}
               height={24}
