@@ -29,9 +29,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            Funded by{' '}
             <Image
-              src="https://www.nihr.ac.uk/nihr-comms/images/visual-identity/logo/funded-by-nihr-logo.png"
+              src="/funded-by-nihr-logo.png"
               alt="Funded by NIHR Logo"
               className="dark:invert"
               width={100}
