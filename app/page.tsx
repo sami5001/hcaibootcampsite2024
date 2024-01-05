@@ -11,7 +11,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h3 className={`mb-3 text-2xl font-semibold`}>
+          <h3 className={`mb-3 text-xl font-semibold`}>
             Register your interest{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -51,6 +51,12 @@ export default function Home() {
           height={500}
           priority
         />
+        <h3 className={`mb-3 text-xl font-medium`}>
+            Let's build Medical AI together!
+        </h3>
+        <h3 className={`mb-3 text-2xl font-extrabold`}>
+            March 25-29, 2024
+        </h3>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
