@@ -34,8 +34,8 @@ export default function Home() {
               src="/funded-by-nihr-logo.png"
               alt="Funded by NIHR Logo"
               className="dark:invert(10%)"
-              width={100}
-              height={24}
+              width={25%}
+              height={25%}
               priority
             />
           </a>
