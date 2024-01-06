@@ -52,11 +52,10 @@ export default function Home() {
           priority
         />
         <br />
-
             <p className={`m-0 mb-3 text-xl font-medium text-left`}>
               Let&apos;s build Medical AI together!
             </p>
-            <br/>
+            <br />
             <p className={`m-0 text-2xl font-extrabold text-left`}>
               March 25-29, 2024
             </p>
