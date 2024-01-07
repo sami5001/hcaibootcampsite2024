@@ -10,7 +10,7 @@ export default function Speakers() {
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           rel="noopener noreferrer"
         >
-          <h3 className={`mb-3 text-lg font-semibold`}>
+          <h3 className={`text-lg font-semibold`}>
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               &lt;-
             </span>
@@ -39,7 +39,7 @@ export default function Speakers() {
       </div>
 
       <div className="flex flex-row">
-        <div className="basis-1/4">
+        <div className="basis-1/2">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
           src="https://www.cs.umd.edu/users/ben/ben_pic_proper-color.jpg"
