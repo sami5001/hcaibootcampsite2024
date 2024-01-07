@@ -11,7 +11,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h3 className={`mb-3 text-xl font-semibold`}>
+          <h3 className={`mb-3 text-lg font-semibold`}>
             Register your interest{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
