@@ -12,14 +12,11 @@ export default function Speakers() {
           rel="noopener noreferrer"
         >
           <h3 className={`mb-3 text-lg font-semibold`}>
-            Register your interest{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
+            {' '} Home
           </h3>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            By filling out this form.
-          </p>
         </a>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
