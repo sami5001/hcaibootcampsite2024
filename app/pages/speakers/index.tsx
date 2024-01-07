@@ -117,7 +117,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Be part of the unique AI Event at Oxford and empower stakeholders in co-creating Digital Health solutions.
+            Be part of the unique AI Event at Oxford. Empower stakeholders in building Medical AI.
           </p>
         </a>
       </div>
