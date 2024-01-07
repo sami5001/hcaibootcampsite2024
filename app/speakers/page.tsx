@@ -120,7 +120,7 @@ export default function Speakers() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Experts and poineers in the field, including Keynote Speech by Professor Ben Shneiderman.
+            Experts and pioneers in the field, including Keynote Speech by Professor Ben Shneiderman.
           </p>
         </a>
 
