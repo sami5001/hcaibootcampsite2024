@@ -61,51 +61,42 @@ export default function Speakers() {
         />
         </div>
 
+      <div className="flex flex-row justify-center">
         <div className="basis-1/2">
             <h2 className={`mb-3 text-2xl font-semibold`}>
-                Keynote Speaker
+                Trainer
             </h2>
             <h3 className={`m-0 max-w-[30ch] text-xl font-bold`}>
-                Professor Ben Shneiderman
+                Sami Adnan
             </h3>
             <p className={`my-3 text-lg opacity-80 font-mono`}>
-              Emeritus Professor <br />
-              Institute for Advanced Computer Studies <br />
-              University of Maryland, MD USA <br />
+              DPhil Researcher <br />
+              Nuffield Department of Primary Care Health Sciences <br />
+              University of Oxford <br />
             </p>
             <p className={`m-0 text-base opacity-50`}>
-              Ben Shneiderman is a Distinguished University Professor in the Department of Computer Science, Founding Director (1983-2000) of the Human-Computer Interaction Laboratory, and a member of the Institute for Advanced Computer Studies at the University of Maryland, College Park. He pioneered the highlighted textual link in 1983, and it became part of Hyperties, a precursor to the web. His move into information visualisation spawned the commercially successful Spotfire, known for pharmaceutical drug discovery and genomic data analysis. Ben Shneiderman is the author of the breakthrough books, Software Psychology: Human Factors in Computer and Information Systems and Designing the User Interface: Strategies for Effective Human-Computer Interaction. His books are popular for his list of Eight Golden Rules of Interface Design which is frequently taught in Human-Computer Interaction courses.
+              Sami Adnan is a DPhil Candidate at the Nuffield Department of Primary Care Health Sciences, University of Oxford. His research focuses on developing and evaluating artificial intelligence and digital health solutions for mitigating multiple long-term conditions. Prior to his research in Oxford, Sami worked as a Research Fellow at Charité – University Hospital Berlin, and prior to that as a Healthcare Researcher at Maastricht University, and as an External Consultant with the World Health Organization. Sami has also worked at Apple Inc. for 8 years in different roles ranging from sales and product development to training new employees and designing company-internal solutions.
+            </p>
+        </div>
+        <div className="basis-1/2">
+            <h2 className={`mb-3 text-2xl font-semibold`}>
+                Trainer
+            </h2>
+            <h3 className={`m-0 max-w-[30ch] text-xl font-bold`}>
+                Dr Jonathan Edelman
+            </h3>
+            <p className={`my-3 text-lg opacity-80 font-mono`}>
+              Founder & Executive Director <br />
+              Center for Advanced Design Studies, Palo Alto, CA <br />
+              Lecturer, Mechanical Engineering, University of Stanford <br />
+            </p>
+            <p className={`m-0 text-base opacity-50`}>
+              Dr Jonathan Edelman is Founder & Executive Director of the Center for Advanced Design Studies, CA; and Lecturer, Mechanical Engineering at Stanford University. He is a senior design strategist and early-stage product development director with experience playing a leading role in creating breakthrough products for preeminent healthcare, software, and design companies. Jonathan’s professional and academic experience includes working with, facilitating and teaching teams from the around the globe in a wide spectrum of domains including Product Service System Design, User Experience, Interaction Design, Business Innovation, Digital Transformation, Digital Health Design, and FinTech. His design practice has encompassed lighting design, interaction design and programming, product-service-system design, digital health design, designing for the new financial landscape, design for value creation, painting, speaking, teaching, advising and consulting.
             </p>
         </div>
       </div>
-
-      <div className="flex flex-row justify-center">
-        <div className="basis-1/3">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
-          src="https://github.com/OxHcAI/HcAI-Bootcamp/assets/11949941/5e436009-97bc-4dce-8d6e-80073c3fdf66"
-          alt="Kurt Waltenbaugh"
-          width={400}
-          height={400}
-          priority
-        />
-        </div>
-        <div className="basis-1/2">
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-                Entrepreneur in Residence
-            </h2>
-            <h3 className={`m-0 max-w-[30ch] text-xl font-bold`}>
-                Kurt Waltenbaugh
-            </h3>
-            <p className={`my-3 text-lg opacity-80 font-mono`}>
-              Managing Advisor <br />
-              Kestrel Rising <br />
-              Minneapolis, MN USA <br />
-            </p>
-            <p className={`m-0 text-base opacity-50`}>
-              Kurt Waltenbaugh is a serial entrepreneur with a career spent building solutions using data and to understand, predict, and influence consumer behavior. Kurt has built successful analytic solutions, products, and companies in the healthcare, retail, and education/credentialing industries. His previous companies were sold to Oracle (Texas), Pearson Education (London & New York), and Unite Us (New York). Kurt helps organizations better understand consumer behavior through consulting and strategic advisory services at Kestrel Rising in Minneapolis. He holds a Master of Business Administration from the University of Minnesota Carlson School of Management and a Bachelor of Arts in Political Science/Technology & Policy Studies from Carleton College.
-            </p>
-        </div>
+      <div className="flex flex-row justify-center text-base opacity-50">
+        Together, Sami and Jonathan are developing this bootcamp, tailored to the medical field to train participants on advanced methods in design innovation that will enable multiple stakeholders, regardless of their experience level, to engage in creating prototypes for Medical AI.
       </div>
 
       <div className="relative flex mt-24 place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#8A1751] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
