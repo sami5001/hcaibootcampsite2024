@@ -8,7 +8,6 @@ export default function Speakers() {
         <a
           href="/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h3 className={`mb-3 text-lg font-semibold`}>
@@ -42,18 +41,33 @@ export default function Speakers() {
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%)"
-          src="/bootcamp-logo-date.svg"
-          alt="HcAI Bootcamp Logo"
+          src="https://www.cs.umd.edu/users/ben/ben_pic_proper-color.jpg"
+          alt="Prof Ben Shneiderman"
           width={500}
           height={500}
           priority
         />
+        <span>
+            <h2 className={`mb-3 text-2xl font-semibold`}>
+                Keynote Speaker
+            </h2>
+            <h3 className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                Professor Ben Shneiderman
+            </h3>
+            <p className={`m-0 max-w-[30ch] text-lg opacity-50 font-mono`}>
+              Emeritus Professor <br />
+              Institute for Advanced Computer Studies <br />
+              University of Maryland, MD USA <br />
+            </p>
+            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+              Ben Shneiderman is a Distinguished University Professor in the Department of Computer Science, Founding Director (1983-2000) of the Human-Computer Interaction Laboratory, and a member of the Institute for Advanced Computer Studies at the University of Maryland, College Park. He pioneered the highlighted textual link in 1983, and it became part of Hyperties, a precursor to the web. His move into information visualisation spawned the commercially successful Spotfire, known for pharmaceutical drug discovery and genomic data analysis. Ben Shneiderman is the author of the breakthrough books, Software Psychology: Human Factors in Computer and Information Systems and Designing the User Interface: Strategies for Effective Human-Computer Interaction. His books are popular for his list of Eight Golden Rules of Interface Design which is frequently taught in Human-Computer Interaction courses.
+            </p>
+        </span>
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="./speakers"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -70,7 +84,6 @@ export default function Speakers() {
         <a
           href="./trainers"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -87,7 +100,6 @@ export default function Speakers() {
         <a
           href="./activities"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -104,7 +116,6 @@ export default function Speakers() {
         <a
           href="./sponsors"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -114,7 +125,7 @@ export default function Speakers() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Be part of the unique AI Event at Oxford. Empower stakeholders in building Medical AI.
+            Be part of this unique AI Event at Oxford. Empower stakeholders to build Medical AI.
           </p>
         </a>
       </div>
