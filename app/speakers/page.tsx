@@ -39,7 +39,7 @@ export default function Speakers() {
       </div>
 
       <div className="flex flex-row">
-        <div className="basis-1/2">
+        <div className="basis-1/4">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
           src="https://www.cs.umd.edu/users/ben/ben_pic_proper-color.jpg"
