@@ -66,6 +66,36 @@ export default function Speakers() {
             </p>
         </div>
       </div>
+
+      <div className="flex flex-row justify-center">
+        <div className="basis-1/3">
+        <Image
+          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
+          src="https://www.cs.umd.edu/users/ben/ben_pic_proper-color.jpg"
+          alt="Prof Ben Shneiderman"
+          width={400}
+          height={400}
+          priority
+        />
+        </div>
+        <div className="basis-1/2">
+            <h2 className={`mb-3 text-2xl font-semibold`}>
+                Keynote Speaker
+            </h2>
+            <h3 className={`m-0 max-w-[30ch] text-xl font-bold`}>
+                Professor Ben Shneiderman
+            </h3>
+            <p className={`my-3 text-lg opacity-80 font-mono`}>
+              Emeritus Professor <br />
+              Institute for Advanced Computer Studies <br />
+              University of Maryland, MD USA <br />
+            </p>
+            <p className={`m-0 text-base opacity-50`}>
+              Ben Shneiderman is a Distinguished University Professor in the Department of Computer Science, Founding Director (1983-2000) of the Human-Computer Interaction Laboratory, and a member of the Institute for Advanced Computer Studies at the University of Maryland, College Park. He pioneered the highlighted textual link in 1983, and it became part of Hyperties, a precursor to the web. His move into information visualisation spawned the commercially successful Spotfire, known for pharmaceutical drug discovery and genomic data analysis. Ben Shneiderman is the author of the breakthrough books, Software Psychology: Human Factors in Computer and Information Systems and Designing the User Interface: Strategies for Effective Human-Computer Interaction. His books are popular for his list of Eight Golden Rules of Interface Design which is frequently taught in Human-Computer Interaction courses.
+            </p>
+        </div>
+      </div>
+
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="./speakers"
