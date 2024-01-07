@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'HcAI Design Bootcamp 2024',
-  description: 'Oxford University HcAI Design Bootcamp 2024',
+  description: 'University of Oxford HcAI Design Bootcamp 2024',
 }
 
 export default function RootLayout({
