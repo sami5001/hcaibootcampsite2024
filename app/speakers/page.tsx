@@ -87,7 +87,7 @@ export default function Speakers() {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-row justify-center mt-10">
         <div className="basis-1/3">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
