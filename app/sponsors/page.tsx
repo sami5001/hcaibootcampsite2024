@@ -87,7 +87,7 @@ export default function Trainers() {
       </div>
     </div>
 
-     <div className="flex flex-row justify-center mt-60 gap-10">
+     <div className="flex flex-row justify-evenly mt-60 gap-10">
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6 bg-cover bg-center">
              <Image
@@ -134,7 +134,7 @@ export default function Trainers() {
         </div>
      </div>
 
-     <div className="flex flex-row justify-center">
+     <div className="flex flex-row justify-evenly">
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6">
              <Image
@@ -181,7 +181,7 @@ export default function Trainers() {
         </div>
      </div>
 
-     <div className="flex flex-row justify-center">
+     <div className="flex flex-row justify-evenly">
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6">
              <Image
