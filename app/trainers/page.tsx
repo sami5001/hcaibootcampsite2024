@@ -38,8 +38,8 @@ export default function Trainers() {
       </div>
     </div>
 
-<div className="flex flex-col justify-around">
-<div className="flex justify-center">
+<div className="flex flex-row justify-around">
+<div className="flex flex-col justify-center">
   <div className="justify-center">
   <Image
     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
@@ -67,7 +67,7 @@ export default function Trainers() {
       </p>
   </div>
 </div>
-<div className="flex justify-center">
+<div className="flex flex-col justify-center">
   <div className="justify-center">
   <Image
     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
