@@ -38,7 +38,7 @@ export default function Trainers() {
       </div>
     </div>
 
-<div className="flex flex-row justify-evenly">
+<div className="flex flex-row justify-around">
   <div className="basis-1/2 justify-center">
   <Image
     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
@@ -69,7 +69,7 @@ export default function Trainers() {
       <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
           Sami Adnan
       </h3>
-      <p className={`my-3 mx-10 text-lg opacity-80 font-mono`}>
+      <p className={`my-3 mx-10 text-base opacity-80 font-mono`}>
         DPhil Researcher <br />
         Nuffield Department of Primary Care Health Sciences <br />
         University of Oxford <br />
@@ -85,7 +85,7 @@ export default function Trainers() {
       <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
           Dr Jonathan Edelman
       </h3>
-      <p className={`my-3 mx-10 text-lg opacity-80 font-mono`}>
+      <p className={`my-3 mx-10 text-base opacity-80 font-mono`}>
         Founder & Executive Director <br />
         Center for Advanced Design Studies, Palo Alto, CA <br />
         Lecturer, Mechanical Engineering, University of Stanford <br />
