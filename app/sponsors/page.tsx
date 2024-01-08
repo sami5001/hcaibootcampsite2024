@@ -170,7 +170,7 @@ export default function Trainers() {
             </div>
           <div>
             <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              St Hugh's College
+              St Hugh&apos;s College
             </h3>
           </div>
           <div>
@@ -208,7 +208,7 @@ export default function Trainers() {
             <div className="justify-center mx-10 mb-6">
              <Image
               src="/images/become-a-sponsor.svg"
-              alt="Become a sponsor!"
+              alt="Become a sponsor"
               className="dark:invert(10%)"
               width={300}
               height={300}
