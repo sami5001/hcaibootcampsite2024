@@ -106,7 +106,7 @@ export default function Trainers() {
       <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
           Sami Adnan
       </h3>
-      <p className={`my-3 mx-10 text-base opacity-80 font-mono`}>
+      <p className={`my-3 mx-10 text-sm opacity-80 font-mono`}>
         DPhil Researcher <br />
         Nuffield Department of Primary Care Health Sciences <br />
         University of Oxford <br />
@@ -134,7 +134,7 @@ export default function Trainers() {
       <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
           Dr Jonathan Edelman
       </h3>
-      <p className={`my-3 mx-10 text-base opacity-80 font-mono`}>
+      <p className={`my-3 mx-10 text-sm opacity-80 font-mono`}>
         Founder & Executive Director <br />
         Center for Advanced Design Studies, Palo Alto, CA <br />
         Lecturer, Mechanical Engineering, University of Stanford <br />

@@ -105,7 +105,7 @@ export default function Speakers() {
             <h3 className={`m-0 max-w-[30ch] text-xl font-bold`}>
                 Professor Ben Shneiderman
             </h3>
-            <p className={`my-3 text-lg opacity-80 font-mono`}>
+            <p className={`my-3 text-sm opacity-80 font-mono`}>
               Emeritus Professor <br />
               Institute for Advanced Computer Studies <br />
               University of Maryland, MD USA <br />
@@ -134,7 +134,7 @@ export default function Speakers() {
             <h3 className={`m-0 max-w-[30ch] text-xl font-bold`}>
                 Kurt Waltenbaugh
             </h3>
-            <p className={`my-3 text-lg opacity-80 font-mono`}>
+            <p className={`my-3 text-sm opacity-80 font-mono`}>
               Managing Advisor <br />
               Kestrel Rising <br />
               Minneapolis, MN USA <br />
