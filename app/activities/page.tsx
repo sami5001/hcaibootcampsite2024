@@ -38,6 +38,53 @@ export default function Trainers() {
       </div>
     </div>
 
+     <div className="flex flex-row justify-center">
+        <div className="flex flex-col justify-center">
+            <div>
+             <Image
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+              alt="Design Innovation"
+              className="dark:invert(10%)"
+              width={300}
+              height={300}
+              priority
+            />
+            </div>
+          <div>
+            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
+              Design Innovation
+            </h3>
+          </div>
+          <div>
+            <p className={`m-10 text-base opacity-50`}>
+              Participants will work in groups to identify, design, and prototype digital health solutions for Multiple Long-Term Conditions.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center">
+            <div>
+             <Image
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+              alt="Domain experts"
+              className="dark:invert(10%)"
+              width={300}
+              height={300}
+              priority
+            />
+            </div>
+          <div>
+            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
+              Domain experts
+            </h3>
+          </div>
+          <div>
+            <p className={`m-10 text-base opacity-50`}>
+              There will be access to healthcare professionals, digital health designers, AI experts, patients who can all collaborate.
+            </p>
+          </div>
+        </div>
+     </div>
+
     <div className="mb-32 mt-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
       <a
         href="./speakers"
