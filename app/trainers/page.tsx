@@ -41,7 +41,7 @@ export default function Trainers() {
 <div className="flex flex-row justify-around">
   <div className="justify-center">
   <Image
-    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg"
+    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
     src="/images/sami.webp"
     alt="Sami Adnan"
     width={400}
@@ -52,7 +52,7 @@ export default function Trainers() {
 
   <div className="justify-center">
   <Image
-    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg"
+    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
     src="/images/jonathan.webp"
     alt="Dr Jonathan Edelman"
     width={400}
