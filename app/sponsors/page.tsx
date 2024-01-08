@@ -105,7 +105,7 @@ export default function Trainers() {
             </h3>
           </div>
           <div>
-            <p className={`m-10 text-base opacity-50`}>
+            <p className={`m-10 max-w-[40ch] text-base opacity-50`}>
               Business Consulting and Services. Minneapolis, MN USA
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function Trainers() {
             </h3>
           </div>
           <div>
-            <p className={`m-10 text-base opacity-50`}>
+            <p className={`m-10 max-w-[40ch] text-base opacity-50`}>
               University of Oxford.
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function Trainers() {
             </h3>
           </div>
           <div>
-            <p className={`m-10 text-base opacity-50`}>
+            <p className={`m-10 max-w-[40ch] text-base opacity-50`}>
               Design Consultancy. Palo Alto, CA USA
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function Trainers() {
             </h3>
           </div>
           <div>
-            <p className={`m-10 text-base opacity-50`}>
+            <p className={`m-10 max-w-[40ch] text-base opacity-50`}>
               University of Oxford
             </p>
           </div>
@@ -199,7 +199,7 @@ export default function Trainers() {
             </h3>
           </div>
           <div>
-            <p className={`m-10 text-base opacity-50`}>
+            <p className={`m-10 max-w-[40ch] text-base opacity-50`}>
               Oxford and Thames Valley Applied Research Collaboration, NIHR
             </p>
           </div>
@@ -221,7 +221,7 @@ export default function Trainers() {
             </h3>
           </div>
           <div>
-            <p className={`m-10 text-base opacity-50`}>
+            <p className={`m-10 max-w-[40ch] text-base opacity-50`}>
               Be part of this unique AI Event at Oxford.
             </p>
           </div>
