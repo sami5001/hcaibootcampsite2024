@@ -39,6 +39,7 @@ export default function Trainers() {
     </div>
 
 <div className="flex flex-col justify-around">
+<div className="flex flex-col justify-around">
   <div className="justify-center">
   <Image
     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
@@ -98,6 +99,7 @@ export default function Trainers() {
   <p className={`m-0 text-base opacity-50`}>
     Together, Sami and Jonathan are developing this bootcamp, tailored to the medical field to train participants on advanced methods in design innovation that will enable multiple stakeholders, regardless of their experience level, to engage in creating prototypes for Medical AI.
   </p>
+</div>
 </div>
 
 
