@@ -87,7 +87,7 @@ export default function Trainers() {
       </div>
     </div>
 
-     <div className="flex flex-row justify-center mt-10">
+     <div className="flex flex-row justify-center mt-60 gap-10">
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6 bg-cover bg-center">
              <Image
@@ -116,8 +116,8 @@ export default function Trainers() {
               src="/compute-logo.svg"
               alt="CoMPuTE"
               className="dark:invert(10%)"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               priority
             />
             </div>
@@ -210,14 +210,14 @@ export default function Trainers() {
               src="/images/become-a-sponsor.svg"
               alt="Become a sponsor"
               className="dark:invert(10%)"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               priority
             />
             </div>
           <div>
             <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Become a sponsor
+              Become a sponsor!
             </h3>
           </div>
           <div>
