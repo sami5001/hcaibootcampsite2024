@@ -89,7 +89,7 @@ export default function Trainers() {
 
      <div className="flex flex-row justify-center mt-10">
         <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10 mb-6 bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1552664730-d307ca884978)">
+            <div className="justify-center mx-10 mb-6 bg-cover bg-center">
              <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978"
               alt="Design Innovation"
