@@ -113,8 +113,8 @@ export default function Trainers() {
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6">
              <Image
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-              alt="Domain experts"
+              src="/compute-logo.svg"
+              alt="CoMPuTE"
               className="dark:invert(10%)"
               width={300}
               height={300}
@@ -123,12 +123,12 @@ export default function Trainers() {
             </div>
           <div>
             <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Domain experts
+              CoMPuTE
             </h3>
           </div>
           <div>
             <p className={`m-10 text-base opacity-50`}>
-              There will be access to healthcare professionals, digital health designers, AI experts, patients who can all collaborate.
+              University of Oxford.
             </p>
           </div>
         </div>
@@ -138,8 +138,8 @@ export default function Trainers() {
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6">
              <Image
-              src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66"
-              alt="Rapid Lectures"
+              src="/images/cfads.svg"
+              alt="The Center for Advanced Design Studies"
               className="dark:invert(10%)"
               width={300}
               height={300}
@@ -148,20 +148,20 @@ export default function Trainers() {
             </div>
           <div>
             <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Rapid Lectures
+              The Center for Advanced Design Studies
             </h3>
           </div>
           <div>
             <p className={`m-10 text-base opacity-50`}>
-              Lectures for beginners and pros on HcAI and digital health AI/ML topics that are relevant to healthcare.
+              Design Consultancy. Palo Alto, CA USA
             </p>
           </div>
         </div>
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6">
              <Image
-              src="https://images.unsplash.com/photo-1576595580361-90a855b84b20"
-              alt="Hands-on exercices"
+              src="/images/st-hughs-logo.svg"
+              alt="St Hugh's College"
               className="dark:invert(10%)"
               width={300}
               height={300}
@@ -170,12 +170,12 @@ export default function Trainers() {
             </div>
           <div>
             <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Hands-on exercises
+              St Hugh's College
             </h3>
           </div>
           <div>
             <p className={`m-10 text-base opacity-50`}>
-              Hands-on HcAI design exercises to apply on participant’s own projects or what the team has identified.
+              University of Oxford
             </p>
           </div>
         </div>
@@ -185,8 +185,8 @@ export default function Trainers() {
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6">
              <Image
-              src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
-              alt="Team presentations"
+              src="/images/nihr-arc-logo.png"
+              alt="NIHR ARC OxTV"
               className="dark:invert(10%)"
               width={300}
               height={300}
@@ -195,20 +195,20 @@ export default function Trainers() {
             </div>
           <div>
             <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Team presentations
+              NIHR ARC OxTV
             </h3>
           </div>
           <div>
             <p className={`m-10 text-base opacity-50`}>
-              Team presentations and plenary sessions for feedback, and to discuss potential approach to solutions.
+              Oxford and Thames Valley Applied Research Collaboration, NIHR
             </p>
           </div>
         </div>
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6">
              <Image
-              src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
-              alt="Advanced prototyping"
+              src="/images/become-a-sponsor.svg"
+              alt="Become a sponsor!"
               className="dark:invert(10%)"
               width={300}
               height={300}
@@ -217,12 +217,12 @@ export default function Trainers() {
             </div>
           <div>
             <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Advanced prototyping
+              Become a sponsor
             </h3>
           </div>
           <div>
             <p className={`m-10 text-base opacity-50`}>
-              Create prototypes with help of IT experts for pitch-ready digital health solutions for review by our entrepreneur in residence.
+              Be part of this unique AI Event at Oxford.
             </p>
           </div>
         </div>
