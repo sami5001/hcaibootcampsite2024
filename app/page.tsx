@@ -41,7 +41,7 @@ export default function Home() {
           </a>
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://www.arc-oxtv.nihr.ac.uk/"
+            href="https://www.phc.ox.ac.uk/research/groups-and-centres/medical-statistics/COMPUTE"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,7 @@ export default function Home() {
           </a>
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://www.arc-oxtv.nihr.ac.uk/"
+            href="https://github.com/OxHcAI/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -73,7 +73,7 @@ export default function Home() {
           </a>
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://www.arc-oxtv.nihr.ac.uk/"
+            href="https://www.phc.ox.ac.uk/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -81,7 +81,7 @@ export default function Home() {
             <Image
               src="/oxford-logo.svg"
               alt="University of Oxford"
-              className="dark:invert(10%)"
+              className="dark:invert"
               width={100}
               height={100}
               priority
