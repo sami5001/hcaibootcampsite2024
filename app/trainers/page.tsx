@@ -35,6 +35,55 @@ export default function Trainers() {
             priority
           />
         </a>
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://www.arc-oxtv.nihr.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <Image
+              src="/compute-logo.svg"
+              alt="CoMPuTE"
+              className="dark:invert(10%)"
+              width={100}
+              height={100}
+              priority
+            />
+          </a>
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://www.arc-oxtv.nihr.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <Image
+              src="/oxhcai-logo.svg"
+              alt="Oxford Human-Centred AI"
+              className="dark:invert(10%)"
+              width={100}
+              height={100}
+              priority
+            />
+          </a>
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://www.arc-oxtv.nihr.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <Image
+              src="/oxford-logo.svg"
+              alt="University of Oxford"
+              className="dark:invert(10%)"
+              width={100}
+              height={100}
+              priority
+            />
+          </a>
+
       </div>
     </div>
 

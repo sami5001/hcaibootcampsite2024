@@ -35,12 +35,61 @@ export default function Trainers() {
             priority
           />
         </a>
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://www.arc-oxtv.nihr.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <Image
+              src="/compute-logo.svg"
+              alt="CoMPuTE"
+              className="dark:invert(10%)"
+              width={100}
+              height={100}
+              priority
+            />
+          </a>
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://www.arc-oxtv.nihr.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <Image
+              src="/oxhcai-logo.svg"
+              alt="Oxford Human-Centred AI"
+              className="dark:invert(10%)"
+              width={100}
+              height={100}
+              priority
+            />
+          </a>
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://www.arc-oxtv.nihr.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <Image
+              src="/oxford-logo.svg"
+              alt="University of Oxford"
+              className="dark:invert(10%)"
+              width={100}
+              height={100}
+              priority
+            />
+          </a>
+
       </div>
     </div>
 
      <div className="flex flex-row justify-center">
         <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10">
+            <div className="justify-center mx-10 mb-6">
              <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978"
               alt="Design Innovation"
@@ -62,7 +111,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10">
+            <div className="justify-center mx-10 mb-6">
              <Image
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
               alt="Domain experts"
@@ -87,7 +136,7 @@ export default function Trainers() {
 
      <div className="flex flex-row justify-center">
         <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10">
+            <div className="justify-center mx-10 mb-6">
              <Image
               src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66"
               alt="Rapid Lectures"
@@ -109,7 +158,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10">
+            <div className="justify-center mx-10 mb-6">
              <Image
               src="https://images.unsplash.com/photo-1576595580361-90a855b84b20"
               alt="Hands-on exercices"
@@ -134,7 +183,7 @@ export default function Trainers() {
 
      <div className="flex flex-row justify-center">
         <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10">
+            <div className="justify-center mx-10 mb-6">
              <Image
               src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
               alt="Team presentations"
@@ -156,7 +205,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10">
+            <div className="justify-center mx-10 mb-6">
              <Image
               src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
               alt="Advanced prototyping"
