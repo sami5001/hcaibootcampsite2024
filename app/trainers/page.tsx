@@ -38,7 +38,7 @@ export default function Trainers() {
       </div>
     </div>
 
-<div className="flex flex-row gap-x-40 justify-around">
+<div className="flex flex-col justify-around">
   <div className="justify-center">
   <Image
     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
@@ -49,19 +49,6 @@ export default function Trainers() {
     priority
   />
   </div>
-
-  <div className="justify-center">
-  <Image
-    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
-    src="/images/jonathan.webp"
-    alt="Dr Jonathan Edelman"
-    width={400}
-    height={400}
-    priority
-  />
-  </div>
-</div>
-<div className="flex flex-row justify-center">
   <div className="basis-1/2">
       <h2 className={`mb-3 mx-10 text-2xl font-semibold`}>
           Trainer
@@ -77,6 +64,18 @@ export default function Trainers() {
       <p className={`m-10 text-base opacity-50`}>
         Sami Adnan is a DPhil Candidate at the Nuffield Department of Primary Care Health Sciences, University of Oxford. His research focuses on developing and evaluating artificial intelligence and digital health solutions for mitigating complex healthcare challenges, e.g. multiple long-term conditions. Prior to his research in Oxford, Sami worked as a Research Fellow at Charit&eacute; – University Hospital Berlin, and prior to that as a Healthcare Researcher at Maastricht University, and as an External Consultant with the World Health Organization. Sami has also worked at Apple Inc. for 8 years in different roles ranging from sales and product development to training new employees and designing company-internal solutions.
       </p>
+  </div>
+</div>
+<div className="flex flex-col justify-center">
+  <div className="justify-center">
+  <Image
+    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
+    src="/images/jonathan.webp"
+    alt="Dr Jonathan Edelman"
+    width={400}
+    height={400}
+    priority
+  />
   </div>
   <div className="basis-1/2">
       <h2 className={`mb-3 mx-10 text-2xl font-semibold`}>
