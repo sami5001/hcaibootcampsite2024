@@ -40,7 +40,7 @@ export default function Trainers() {
 
      <div className="flex flex-row justify-center">
         <div className="flex flex-col justify-center">
-            <div className="justify-center">
+            <div className="justify-center mx-10">
              <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978"
               alt="Design Innovation"
@@ -62,7 +62,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-            <div className="justify-center">
+            <div className="justify-center mx-10">
              <Image
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
               alt="Domain experts"
@@ -87,7 +87,7 @@ export default function Trainers() {
 
      <div className="flex flex-row justify-center">
         <div className="flex flex-col justify-center">
-            <div className="justify-center">
+            <div className="justify-center mx-10">
              <Image
               src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66"
               alt="Rapid Lectures"
@@ -109,7 +109,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-            <div className="justify-center">
+            <div className="justify-center mx-10">
              <Image
               src="https://images.unsplash.com/photo-1576595580361-90a855b84b20"
               alt="Hands-on exercices"
@@ -134,7 +134,7 @@ export default function Trainers() {
 
      <div className="flex flex-row justify-center">
         <div className="flex flex-col justify-center">
-            <div className="justify-center">
+            <div className="justify-center mx-10">
              <Image
               src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
               alt="Team presentations"
@@ -156,7 +156,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-            <div className="justify-center">
+            <div className="justify-center mx-10">
              <Image
               src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
               alt="Advanced prototyping"
