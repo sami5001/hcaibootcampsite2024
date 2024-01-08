@@ -39,7 +39,7 @@ export default function Trainers() {
     </div>
 
 <div className="flex flex-row justify-around">
-  <div className="basis-1/2 justify-center">
+  <div className="justify-center">
   <Image
     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
     src="/images/sami.webp"
@@ -50,7 +50,7 @@ export default function Trainers() {
   />
   </div>
 
-  <div className="basis-1/2 justify-center">
+  <div className="justify-center">
   <Image
     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-md"
     src="/images/jonathan.webp"
@@ -96,20 +96,9 @@ export default function Trainers() {
   </div>
 </div>
 <div className="flex flex-row justify-center">
-  <p className={`m-10 text-base opacity-50`}>
+  <p className={`m-0 text-base opacity-50`}>
     Together, Sami and Jonathan are developing this bootcamp, tailored to the medical field to train participants on advanced methods in design innovation that will enable multiple stakeholders, regardless of their experience level, to engage in creating prototypes for Medical AI.
   </p>
-</div>
-
-<div className="relative flex mt-24 place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#8A1751] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-  <Image
-    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%)"
-    src="/speaker-updates.svg"
-    alt="More Spkeaers to be announced soon..."
-    width={700}
-    height={500}
-    priority
-  />
 </div>
 
 
