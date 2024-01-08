@@ -99,7 +99,7 @@ export default function Trainers() {
     priority
   />
   </div>
-  <div>
+  <div className="grow">
       <h2 className={`mb-3 mx-10 text-2xl font-semibold`}>
           Trainer
       </h2>
@@ -127,7 +127,7 @@ export default function Trainers() {
     priority
   />
   </div>
-  <div>
+  <div className="grow">
       <h2 className={`mb-3 mx-10 text-2xl font-semibold`}>
           Trainer
       </h2>
@@ -146,7 +146,7 @@ export default function Trainers() {
 </div>
 </div>
 <div className="flex justify-center">
-  <p className={`m-0 text-base opacity-50`}>
+  <p className={`m-0 mx-10 text-base opacity-50`}>
     Together, Sami and Jonathan are developing this bootcamp, tailored to the medical field to train participants on advanced methods in design innovation that will enable multiple stakeholders, regardless of their experience level, to engage in creating prototypes for Medical AI.
   </p>
 </div>
