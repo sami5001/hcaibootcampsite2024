@@ -77,7 +77,7 @@ export default function Trainers() {
             <Image
               src="/oxford-logo.svg"
               alt="University of Oxford"
-              className="dark:invert(10%)"
+              className="dark:grayscale"
               width={100}
               height={100}
               priority

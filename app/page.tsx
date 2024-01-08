@@ -81,7 +81,7 @@ export default function Home() {
             <Image
               src="/oxford-logo.svg"
               alt="University of Oxford"
-              className="dark:invert"
+              className="dark:grayscale"
               width={100}
               height={100}
               priority
