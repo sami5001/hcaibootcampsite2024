@@ -50,7 +50,7 @@ export default function Trainers() {
     priority
   />
   </div>
-  <div className="basis-1/2">
+  <div>
       <h2 className={`mb-3 mx-10 text-2xl font-semibold`}>
           Trainer
       </h2>
@@ -78,7 +78,7 @@ export default function Trainers() {
     priority
   />
   </div>
-  <div className="basis-1/2">
+  <div>
       <h2 className={`mb-3 mx-10 text-2xl font-semibold`}>
           Trainer
       </h2>
