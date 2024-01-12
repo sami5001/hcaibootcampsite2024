@@ -110,6 +110,9 @@ export default function Speakers() {
               Institute for Advanced Computer Studies <br />
               University of Maryland, MD USA <br />
             </p>
+            <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Human-centred AI</span>
+            <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300">Design Innovation</span>
+            <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400">Digital Health</span>
             <p className={`m-0 mb-10 text-base opacity-50`}>
               Ben Shneiderman is a Distinguished University Professor in the Department of Computer Science, Founding Director (1983-2000) of the Human-Computer Interaction Laboratory, and a member of the Institute for Advanced Computer Studies at the University of Maryland, College Park. He pioneered the highlighted textual link in 1983, and it became part of Hyperties, a precursor to the web. His move into information visualisation spawned the commercially successful Spotfire, known for pharmaceutical drug discovery and genomic data analysis. Ben Shneiderman is the author of the breakthrough books, Software Psychology: Human Factors in Computer and Information Systems and Designing the User Interface: Strategies for Effective Human-Computer Interaction. His books are popular for his list of Eight Golden Rules of Interface Design which is frequently taught in Human-Computer Interaction courses.
             </p>
@@ -139,6 +142,9 @@ export default function Speakers() {
               Kestrel Rising <br />
               Minneapolis, MN USA <br />
             </p>
+            <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">Medical Entrepreneurship</span>
+            <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400">Digital Health</span>
+            <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">Artificial Intelligence</span>
             <p className={`m-0 mb-10 text-base opacity-50`}>
               Kurt Waltenbaugh is a serial entrepreneur with a career spent building solutions using data and to understand, predict, and influence consumer behavior. Kurt has built successful analytic solutions, products, and companies in the healthcare, retail, and education/credentialing industries. His previous companies were sold to Oracle (Texas), Pearson Education (London & New York), and Unite Us (New York). Kurt helps organizations better understand consumer behavior through consulting and strategic advisory services at Kestrel Rising in Minneapolis. He holds a Master of Business Administration from the University of Minnesota Carlson School of Management and a Bachelor of Arts in Political Science/Technology & Policy Studies from Carleton College.
             </p>
