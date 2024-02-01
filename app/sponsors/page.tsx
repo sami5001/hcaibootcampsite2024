@@ -93,7 +93,7 @@ export default function Trainers() {
              <Image
               src="/images/AIM-RSF_Logo-white.png"
               alt="The Alan Turing Institute AIM RSF"
-              className="dark:invert(10%)"
+              className="dark:invert(10%) invert hover:invert-0"
               width={300}
               height={300}
               priority
