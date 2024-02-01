@@ -91,6 +91,28 @@ export default function Trainers() {
         <div className="flex flex-col justify-center">
             <div className="justify-center mx-10 mb-6 bg-cover bg-center">
              <Image
+              src="/images/AIM-RSF_Logo-white.png"
+              alt="The Alan Turing Institute AIM RSF"
+              className="dark:invert(10%)"
+              width={300}
+              height={300}
+              priority
+            />
+            </div>
+          <div>
+            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
+              The Alan Turing Institute AIM RSF
+            </h3>
+          </div>
+          <div>
+            <p className={`m-10 max-w-[40ch] text-base opacity-50`}>
+              AI for Multiple Long-term Conditions, Research Support Facility. London, UK
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center">
+            <div className="justify-center mx-10 mb-6 bg-cover bg-center">
+             <Image
               src="/images/kestrel-rising-logo.svg"
               alt="Kestrel Rising"
               className="dark:invert(10%)"
