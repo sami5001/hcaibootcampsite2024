@@ -1,8 +1,12 @@
 import React from 'react';
 //import './globals.css'; // Import global styles
-//
-//
-const AgendaItem = ({ time, event }) => {
+
+interface AgendaItemProps {
+  time: string;
+  event: string;
+}
+
+const AgendaItem: React.FC<AgendaItemProps> = ({ time, event }) => {
   return (
     <tr>
       <td className="px-4 py-2">{time}</td>
@@ -11,27 +15,7 @@ const AgendaItem = ({ time, event }) => {
   );
 };
 
-const Agenda = ({ data }) => {
-  return (
-    <div className="container mx-auto p-4">
-      <table className="table-auto w-full">
-        <thead>
-          <tr>
-            <th className="px-4 py-2">Time</th>
-            <th className="px-4 py-2">Event</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((item, index) => (
-            <AgendaItem key={index} time={item.time} event={item.event} />
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-};
-
-const App = () => {
+const Agenda: React.FC = () => {
   const agendaData = [
     { time: '9:00 am', event: 'Tea/Coffee' },
     { time: '9:30 am', event: 'Session 1' },
@@ -52,8 +36,28 @@ const App = () => {
   ];
 
   return (
+    <div className="container mx-auto p-4">
+      <table className="table-auto w-full">
+        <thead>
+          <tr>
+            <th className="px-4 py-2">Time</th>
+            <th className="px-4 py-2">Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          {agendaData.map((item, index) => (
+            <AgendaItem key={index} time={item.time} event={item.event} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
     <div className="min-h-screen bg-gradient-to-b from-transparent via-white to-white dark:from-black dark:via-black dark:to-black">
-      <Agenda data={agendaData} />
+      <Agenda />
     </div>
   );
 };
