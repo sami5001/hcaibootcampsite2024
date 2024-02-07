@@ -1,5 +1,5 @@
 import React from 'react';
-import './globals.css'; // Import global styles
+//import './globals.css'; // Import global styles
 //
 //
 const AgendaItem = ({ time, event }) => {
