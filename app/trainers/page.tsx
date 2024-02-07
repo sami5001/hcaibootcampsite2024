@@ -88,7 +88,7 @@ export default function Trainers() {
     </div>
 
 <div className="flex flex-row justify-center mt-10 space-x-10">
-  <div className="flex flex-col justify-center w-1/2">
+  <div className="flex flex-col justify-between w-1/2">
     <div className="flex justify-center">
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
@@ -99,7 +99,7 @@ export default function Trainers() {
         priority
       />
     </div>
-    <div className="px-8 py-6">
+    <div className="px-8 py-6 flex-1">
       <h2 className="mb-3 text-2xl font-semibold">Trainer</h2>
       <h3 className="m-0 text-xl font-bold">Sami Adnan</h3>
       <p className="my-3 text-sm opacity-80 font-mono">
@@ -112,7 +112,7 @@ export default function Trainers() {
       </p>
     </div>
   </div>
-  <div className="flex flex-col justify-center w-1/2">
+  <div className="flex flex-col justify-between w-1/2">
     <div className="flex justify-center">
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
@@ -123,7 +123,7 @@ export default function Trainers() {
         priority
       />
     </div>
-    <div className="px-8 py-6">
+    <div className="px-8 py-6 flex-1">
       <h2 className="mb-3 text-2xl font-semibold">Trainer</h2>
       <h3 className="m-0 text-xl font-bold">Dr Jonathan Edelman</h3>
       <p className="my-3 text-sm opacity-80 font-mono">
@@ -142,6 +142,7 @@ export default function Trainers() {
     Together, Sami and Jonathan are developing this bootcamp, tailored to the medical field to train participants on advanced methods in design innovation that will enable multiple stakeholders, regardless of their experience level, to engage in creating prototypes for Medical AI.
   </p>
 </div>
+
 
 
 
