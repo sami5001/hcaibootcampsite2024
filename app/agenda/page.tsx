@@ -55,11 +55,12 @@ const Agenda: React.FC = () => {
     </div>
   );
 };
-<Footer />
+
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-transparent via-white to-white dark:from-black dark:via-black dark:to-black">
       <Agenda />
+      <Footer />
     </div>
   );
 };
