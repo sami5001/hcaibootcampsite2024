@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+
 //import './globals.css'; // Import global styles
 
 interface AgendaItemProps {
@@ -53,7 +55,7 @@ const Agenda: React.FC = () => {
     </div>
   );
 };
-
+<Footer />
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-transparent via-white to-white dark:from-black dark:via-black dark:to-black">
