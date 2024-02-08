@@ -88,12 +88,13 @@ export default function Trainers() {
     </div>
 
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center mt-10">
+  {/* Card 1 */}
   <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
-    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+    <div className="w-full max-h-64 overflow-hidden rounded-t-lg">
       <Image
         src="https://images.unsplash.com/photo-1552664730-d307ca884978"
         alt="Design Innovation"
-        className="rounded-t-lg"
+        className="object-cover w-full"
         width={400}
         height={300}
         priority
@@ -106,12 +107,14 @@ export default function Trainers() {
       </p>
     </div>
   </div>
+
+  {/* Card 2 */}
   <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
-    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+    <div className="w-full max-h-64 overflow-hidden rounded-t-lg">
       <Image
         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
         alt="Domain experts"
-        className="rounded-t-lg"
+        className="object-cover w-full"
         width={400}
         height={300}
         priority
@@ -124,12 +127,14 @@ export default function Trainers() {
       </p>
     </div>
   </div>
+
+  {/* Card 3 */}
   <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
-    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+    <div className="w-full max-h-64 overflow-hidden rounded-t-lg">
       <Image
         src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66"
         alt="Rapid Lectures"
-        className="rounded-t-lg"
+        className="object-cover w-full"
         width={400}
         height={300}
         priority
@@ -142,12 +147,14 @@ export default function Trainers() {
       </p>
     </div>
   </div>
+
+  {/* Card 4 */}
   <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
-    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+    <div className="w-full max-h-64 overflow-hidden rounded-t-lg">
       <Image
         src="https://images.unsplash.com/photo-1576595580361-90a855b84b20"
         alt="Hands-on exercices"
-        className="rounded-t-lg"
+        className="object-cover w-full"
         width={400}
         height={300}
         priority
@@ -160,12 +167,14 @@ export default function Trainers() {
       </p>
     </div>
   </div>
+
+  {/* Card 5 */}
   <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
-    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+    <div className="w-full max-h-64 overflow-hidden rounded-t-lg">
       <Image
-        src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
+        src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
         alt="Team presentations"
-        className="rounded-t-lg"
+        className="object-cover w-full"
         width={400}
         height={300}
         priority
@@ -178,12 +187,14 @@ export default function Trainers() {
       </p>
     </div>
   </div>
+
+  {/* Card 6 */}
   <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
-    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+    <div className="w-full max-h-64 overflow-hidden rounded-t-lg">
       <Image
-        src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+        src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
         alt="Advanced prototyping"
-        className="rounded-t-lg"
+        className="object-cover w-full"
         width={400}
         height={300}
         priority
@@ -197,6 +208,7 @@ export default function Trainers() {
     </div>
   </div>
 </div>
+
 
 
     <div className="mb-32 mt-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
