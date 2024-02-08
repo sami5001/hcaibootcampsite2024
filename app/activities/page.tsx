@@ -87,146 +87,116 @@ export default function Trainers() {
       </div>
     </div>
 
-     <div className="flex flex-row justify-center mt-10">
-        <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10 mb-6 bg-cover bg-center">
-             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-              alt="Design Innovation"
-              className="dark:invert(10%)"
-              width={300}
-              height={300}
-              priority
-            />
-            </div>
-          <div>
-            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Design Innovation
-            </h3>
-          </div>
-          <div>
-            <p className={`m-10 text-base opacity-50`}>
-              Participants will work in groups to identify, design, and prototype digital health solutions for Multiple Long-Term Conditions.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10 mb-6">
-             <Image
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-              alt="Domain experts"
-              className="dark:invert(10%)"
-              width={300}
-              height={300}
-              priority
-            />
-            </div>
-          <div>
-            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Domain experts
-            </h3>
-          </div>
-          <div>
-            <p className={`m-10 text-base opacity-50`}>
-              There will be access to healthcare professionals, digital health designers, AI experts, patients who can all collaborate.
-            </p>
-          </div>
-        </div>
-     </div>
-
-     <div className="flex flex-row justify-center">
-        <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10 mb-6">
-             <Image
-              src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66"
-              alt="Rapid Lectures"
-              className="dark:invert(10%)"
-              width={300}
-              height={300}
-              priority
-            />
-            </div>
-          <div>
-            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Rapid Lectures
-            </h3>
-          </div>
-          <div>
-            <p className={`m-10 text-base opacity-50`}>
-              Lectures for beginners and pros on HcAI and digital health AI/ML topics that are relevant to healthcare.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10 mb-6">
-             <Image
-              src="https://images.unsplash.com/photo-1576595580361-90a855b84b20"
-              alt="Hands-on exercices"
-              className="dark:invert(10%)"
-              width={300}
-              height={300}
-              priority
-            />
-            </div>
-          <div>
-            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Hands-on exercises
-            </h3>
-          </div>
-          <div>
-            <p className={`m-10 text-base opacity-50`}>
-              Hands-on HcAI design exercises to apply on participant’s own projects or what the team has identified.
-            </p>
-          </div>
-        </div>
-     </div>
-
-     <div className="flex flex-row justify-center">
-        <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10 mb-6">
-             <Image
-              src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
-              alt="Team presentations"
-              className="dark:invert(10%)"
-              width={300}
-              height={300}
-              priority
-            />
-            </div>
-          <div>
-            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Team presentations
-            </h3>
-          </div>
-          <div>
-            <p className={`m-10 text-base opacity-50`}>
-              Team presentations and plenary sessions for feedback, and to discuss potential approach to solutions.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center">
-            <div className="justify-center mx-10 mb-6">
-             <Image
-              src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
-              alt="Advanced prototyping"
-              className="dark:invert(10%)"
-              width={300}
-              height={300}
-              priority
-            />
-            </div>
-          <div>
-            <h3 className={`m-0 mx-10 max-w-[30ch] text-xl font-bold`}>
-              Advanced prototyping
-            </h3>
-          </div>
-          <div>
-            <p className={`m-10 text-base opacity-50`}>
-              Create prototypes with help of IT experts for pitch-ready digital health solutions for review by our entrepreneur in residence.
-            </p>
-          </div>
-        </div>
-     </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center mt-10">
+  <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+      <Image
+        src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+        alt="Design Innovation"
+        className="rounded-t-lg"
+        width={400}
+        height={300}
+        priority
+      />
+    </div>
+    <div className="p-4">
+      <h3 className="text-xl font-bold mb-2">Design Innovation</h3>
+      <p className="text-base opacity-70">
+        Participants will work in groups to identify, design, and prototype digital health solutions for Multiple Long-Term Conditions.
+      </p>
+    </div>
+  </div>
+  <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+      <Image
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+        alt="Domain experts"
+        className="rounded-t-lg"
+        width={400}
+        height={300}
+        priority
+      />
+    </div>
+    <div className="p-4">
+      <h3 className="text-xl font-bold mb-2">Domain experts</h3>
+      <p className="text-base opacity-70">
+        There will be access to healthcare professionals, digital health designers, AI experts, patients who can all collaborate.
+      </p>
+    </div>
+  </div>
+  <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+      <Image
+        src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66"
+        alt="Rapid Lectures"
+        className="rounded-t-lg"
+        width={400}
+        height={300}
+        priority
+      />
+    </div>
+    <div className="p-4">
+      <h3 className="text-xl font-bold mb-2">Rapid Lectures</h3>
+      <p className="text-base opacity-70">
+        Lectures for beginners and pros on HcAI and digital health AI/ML topics that are relevant to healthcare.
+      </p>
+    </div>
+  </div>
+  <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+      <Image
+        src="https://images.unsplash.com/photo-1576595580361-90a855b84b20"
+        alt="Hands-on exercices"
+        className="rounded-t-lg"
+        width={400}
+        height={300}
+        priority
+      />
+    </div>
+    <div className="p-4">
+      <h3 className="text-xl font-bold mb-2">Hands-on exercises</h3>
+      <p className="text-base opacity-70">
+        Hands-on HcAI design exercises to apply on participant’s own projects or what the team has identified.
+      </p>
+    </div>
+  </div>
+  <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+      <Image
+        src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
+        alt="Team presentations"
+        className="rounded-t-lg"
+        width={400}
+        height={300}
+        priority
+      />
+    </div>
+    <div className="p-4">
+      <h3 className="text-xl font-bold mb-2">Team presentations</h3>
+      <p className="text-base opacity-70">
+        Team presentations and plenary sessions for feedback, and to discuss potential approach to solutions.
+      </p>
+    </div>
+  </div>
+  <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+    <div className="w-full h-64 bg-cover bg-center rounded-t-lg">
+      <Image
+        src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+        alt="Advanced prototyping"
+        className="rounded-t-lg"
+        width={400}
+        height={300}
+        priority
+      />
+    </div>
+    <div className="p-4">
+      <h3 className="text-xl font-bold mb-2">Advanced prototyping</h3>
+      <p className="text-base opacity-70">
+        Create prototypes with help of IT experts for pitch-ready digital health solutions for review by our entrepreneur in residence.
+      </p>
+    </div>
+  </div>
+</div>
 
 
     <div className="mb-32 mt-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
