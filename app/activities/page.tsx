@@ -87,6 +87,7 @@ export default function Trainers() {
       </div>
     </div>
 
+<div className="max-w-screen-xl mx-auto">
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center mt-10">
   {/* Card 1 */}
   <div className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg rounded-lg">
@@ -208,7 +209,7 @@ export default function Trainers() {
     </div>
   </div>
 </div>
-
+</div>
 
 
     <div className="mb-32 mt-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
