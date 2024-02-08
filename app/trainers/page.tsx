@@ -87,7 +87,7 @@ export default function Trainers() {
       </div>
     </div>
 
-<div className="flex flex-row justify-center mt-10 space-x-10">
+<div className="flex flex-row justify-center mt-10 space-x-10 max-w-5xl">
   <div className="flex flex-col justify-between w-1/2">
     <div className="flex justify-center">
       <Image
