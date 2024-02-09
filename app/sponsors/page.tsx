@@ -87,7 +87,42 @@ export default function Trainers() {
       </div>
     </div>
 
-
+<div className="flex flex-row justify-center mt-10 space-x-10 max-w-5xl">
+<div className="grid grid-cols-2 gap-10">
+  {/* First Column */}
+  <div className="flex flex-col justify-center">
+    {/* First Item */}
+    <div className="mx-10 mb-6 card">
+      <Image
+        src="/images/AIM-RSF_Logo-white.png"
+        alt="The Alan Turing Institute AIM RSF"
+        className="dark:invert-10 w-full h-64 object-cover"
+        priority
+      />
+      <div className="p-4">
+        <h3 className="text-xl font-bold mb-2">The Alan Turing Institute AIM RSF</h3>
+        <p className="text-base opacity-50">AI for Multiple Long-term Conditions, Research Support Facility. London, UK</p>
+      </div>
+    </div>
+  </div>
+  {/* Second Column */}
+  <div className="flex flex-col justify-center">
+    {/* Second Item */}
+    <div className="mx-10 mb-6 card">
+      <Image
+        src="/images/kestrel-rising-logo.svg"
+        alt="Kestrel Rising"
+        className="dark:invert-10 w-full h-64 object-cover"
+        priority
+      />
+      <div className="p-4">
+        <h3 className="text-xl font-bold mb-2">Kestrel Rising</h3>
+        <p className="text-base opacity-50">Business Consulting and Services. Minneapolis, MN USA</p>
+      </div>
+    </div>
+  </div>
+</div>
+{/* Add similar structures for the remaining items */}
 <div className="grid grid-cols-2 gap-10">
   {/* Third Column */}
   <div className="flex flex-col justify-center">
@@ -176,7 +211,7 @@ export default function Trainers() {
     </div>
   </div>
 </div>
-
+</div>
 
 
     <div className="mb-32 mt-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
