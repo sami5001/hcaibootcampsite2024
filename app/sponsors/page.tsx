@@ -88,7 +88,8 @@ export default function Trainers() {
     </div>
 
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+<div className="max-w-5xl mx-auto">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
     {/* First Column */}
     <div className="flex flex-col justify-center">
       {/* First Item */}
@@ -96,9 +97,7 @@ export default function Trainers() {
         <Image
           src="/images/AIM-RSF_Logo-white.png"
           alt="The Alan Turing Institute AIM RSF"
-          className="object-cover object-center h-48 w-full"
-          width={300}
-          height={300}
+          className="object-cover object-center w-full"
           priority
         />
       </div>
@@ -118,9 +117,7 @@ export default function Trainers() {
         <Image
           src="/images/kestrel-rising-logo.svg"
           alt="Kestrel Rising"
-          className="object-cover object-center h-48 w-full"
-          width={300}
-          height={300}
+          className="object-cover object-center w-full"
           priority
         />
       </div>
@@ -133,19 +130,13 @@ export default function Trainers() {
         </p>
       </div>
     </div>
-  </div>
-
-  {/* Third to Seventh Columns */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
     {/* Third Item */}
     <div className="flex flex-col justify-center">
       <div className="mx-10 mb-6">
         <Image
           src="/compute-logo.svg"
           alt="CoMPuTE"
-          className="object-cover object-center h-48 w-full"
-          width={200}
-          height={200}
+          className="object-cover object-center w-full"
           priority
         />
       </div>
@@ -164,9 +155,7 @@ export default function Trainers() {
         <Image
           src="/images/cfads.svg"
           alt="The Center for Advanced Design Studies"
-          className="object-cover object-center h-48 w-full"
-          width={300}
-          height={300}
+          className="object-cover object-center w-full"
           priority
         />
       </div>
@@ -185,9 +174,7 @@ export default function Trainers() {
         <Image
           src="/images/st-hughs-logo.svg"
           alt="St Hugh's College"
-          className="object-cover object-center h-48 w-full"
-          width={300}
-          height={300}
+          className="object-cover object-center w-full"
           priority
         />
       </div>
@@ -206,9 +193,7 @@ export default function Trainers() {
         <Image
           src="/images/nihr-arc-logo.png"
           alt="NIHR ARC OxTV"
-          className="object-cover object-center h-48 w-full"
-          width={300}
-          height={300}
+          className="object-cover object-center w-full"
           priority
         />
       </div>
@@ -227,9 +212,7 @@ export default function Trainers() {
         <Image
           src="/images/become-a-sponsor.svg"
           alt="Become a sponsor"
-          className="object-cover object-center h-48 w-full"
-          width={200}
-          height={200}
+          className="object-cover object-center w-full"
           priority
         />
       </div>
@@ -243,7 +226,7 @@ export default function Trainers() {
       </div>
     </div>
   </div>
-
+</div>
 
 
 
