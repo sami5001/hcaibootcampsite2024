@@ -92,7 +92,7 @@ export default function Trainers() {
     {/* First Column */}
     <div className="flex flex-col justify-center">
       {/* First Item */}
-      <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+      <div className="mx-10 mb-6">
         <Image
           src="/images/AIM-RSF_Logo-white.png"
           alt="The Alan Turing Institute AIM RSF"
@@ -114,7 +114,7 @@ export default function Trainers() {
     {/* Second Column */}
     <div className="flex flex-col justify-center">
       {/* Second Item */}
-      <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+      <div className="mx-10 mb-6">
         <Image
           src="/images/kestrel-rising-logo.svg"
           alt="Kestrel Rising"
@@ -139,7 +139,7 @@ export default function Trainers() {
   <div className="grid grid-cols-2 gap-10">
     {/* Third Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+      <div className="mx-10 mb-6">
         <Image
           src="/compute-logo.svg"
           alt="CoMPuTE"
@@ -160,7 +160,7 @@ export default function Trainers() {
     </div>
     {/* Fourth Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+      <div className="mx-10 mb-6">
         <Image
           src="/images/cfads.svg"
           alt="The Center for Advanced Design Studies"
@@ -181,7 +181,7 @@ export default function Trainers() {
     </div>
     {/* Fifth Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+      <div className="mx-10 mb-6">
         <Image
           src="/images/st-hughs-logo.svg"
           alt="St Hugh's College"
@@ -202,7 +202,7 @@ export default function Trainers() {
     </div>
     {/* Sixth Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+      <div className="mx-10 mb-6">
         <Image
           src="/images/nihr-arc-logo.png"
           alt="NIHR ARC OxTV"
@@ -223,7 +223,7 @@ export default function Trainers() {
     </div>
     {/* Seventh Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+      <div className="mx-10 mb-6">
         <Image
           src="/images/become-a-sponsor.svg"
           alt="Become a sponsor"
