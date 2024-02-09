@@ -88,7 +88,7 @@ export default function Trainers() {
     </div>
 
 
-  <div className="grid grid-cols-2 gap-10">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
     {/* First Column */}
     <div className="flex flex-col justify-center">
       {/* First Item */}
