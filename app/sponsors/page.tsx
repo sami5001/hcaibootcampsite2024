@@ -88,129 +88,151 @@ export default function Trainers() {
     </div>
 
 <div className="flex flex-row justify-center mt-10 space-x-10 max-w-5xl">
-<div className="grid grid-cols-2 gap-10">
-  {/* First Column */}
-  <div className="flex flex-col justify-center">
-    {/* First Item */}
-    <div className="mx-10 mb-6 card">
-      <Image
-        src="/images/AIM-RSF_Logo-white.png"
-        alt="The Alan Turing Institute AIM RSF"
-        className="dark:invert-10 w-full h-64 object-cover"
-        priority
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">The Alan Turing Institute AIM RSF</h3>
-        <p className="text-base opacity-50">AI for Multiple Long-term Conditions, Research Support Facility. London, UK</p>
-      </div>
-    </div>
-  </div>
-  {/* Second Column */}
-  <div className="flex flex-col justify-center">
-    {/* Second Item */}
-    <div className="mx-10 mb-6 card">
-      <Image
-        src="/images/kestrel-rising-logo.svg"
-        alt="Kestrel Rising"
-        className="dark:invert-10 w-full h-64 object-cover"
-        priority
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">Kestrel Rising</h3>
-        <p className="text-base opacity-50">Business Consulting and Services. Minneapolis, MN USA</p>
-      </div>
-    </div>
-  </div>
-</div>
-{/* Add similar structures for the remaining items */}
-<div className="grid grid-cols-2 gap-10">
-  {/* Third Column */}
-  <div className="flex flex-col justify-center">
-    {/* Third Item */}
-    <div className="mx-10 mb-6 card">
-      <Image
-        src="/compute-logo.svg"
-        alt="CoMPuTE"
-        className="dark:invert-10 w-full h-64 object-cover"
-        priority
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">CoMPuTE</h3>
-        <p className="text-base opacity-50">University of Oxford.</p>
-      </div>
-    </div>
-  </div>
-  {/* Fourth Column */}
-  <div className="flex flex-col justify-center">
-    {/* Fourth Item */}
-    <div className="mx-10 mb-6 card">
-      <Image
-        src="/images/cfads.svg"
-        alt="The Center for Advanced Design Studies"
-        className="dark:invert-10 w-full h-64 object-cover"
-        priority
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">The Center for Advanced Design Studies</h3>
-        <p className="text-base opacity-50">Design Consultancy. Palo Alto, CA USA</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-{/* Fifth Column */}
-<div className="grid grid-cols-2 gap-10">
-  {/* Fifth Item */}
-  <div className="flex flex-col justify-center">
-    <div className="mx-10 mb-6 card">
-      <Image
-        src="/images/st-hughs-logo.svg"
-        alt="St Hugh's College"
-        className="dark:invert-10 w-full h-64 object-cover"
-        priority
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">St Hugh&apos;s College</h3>
-        <p className="text-base opacity-50">University of Oxford</p>
-      </div>
-    </div>
-  </div>
-  {/* Sixth Column */}
-  <div className="flex flex-col justify-center">
-    {/* Sixth Item */}
-    <div className="mx-10 mb-6 card">
-      <Image
-        src="/images/nihr-arc-logo.png"
-        alt="NIHR ARC OxTV"
-        className="dark:invert-10 w-full h-64 object-cover"
-        priority
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">NIHR ARC OxTV</h3>
-        <p className="text-base opacity-50">Oxford and Thames Valley Applied Research Collaboration, NIHR</p>
-      </div>
-    </div>
-  </div>
-</div>
+import Image from 'next/image';
 
-{/* Seventh Column */}
-<div className="grid grid-cols-2 gap-10">
-  {/* Seventh Item */}
-  <div className="flex flex-col justify-center">
-    <div className="mx-10 mb-6 card">
-      <Image
-        src="/images/become-a-sponsor.svg"
-        alt="Become a sponsor"
-        className="dark:invert-10 w-full h-64 object-cover"
-        priority
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">Become a sponsor!</h3>
-        <p className="text-base opacity-50">Be part of this unique AI Event at Oxford.</p>
+export default function CardGrid() {
+  return (
+    <>
+      {/* First Column */}
+      <div className="grid grid-cols-2 gap-10">
+        {/* First Item */}
+        <div className="flex flex-col justify-center">
+          <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+            <Image
+              src="/images/AIM-RSF_Logo-white.png"
+              alt="The Alan Turing Institute AIM RSF"
+              className="object-cover object-center h-48"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
+          <div className="mx-10">
+            <h3 className="text-xl font-bold">The Alan Turing Institute AIM RSF</h3>
+            <p className="text-base opacity-50">AI for Multiple Long-term Conditions, Research Support Facility. London, UK</p>
+          </div>
+        </div>
+        {/* Second Item */}
+        <div className="flex flex-col justify-center">
+          <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+            <Image
+              src="/images/kestrel-rising-logo.svg"
+              alt="Kestrel Rising"
+              className="object-cover object-center h-48"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
+          <div className="mx-10">
+            <h3 className="text-xl font-bold">Kestrel Rising</h3>
+            <p className="text-base opacity-50">Business Consulting and Services. Minneapolis, MN USA</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+
+      {/* Second Column */}
+      <div className="grid grid-cols-2 gap-10">
+        {/* Third Item */}
+        <div className="flex flex-col justify-center">
+          <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+            <Image
+              src="/compute-logo.svg"
+              alt="CoMPuTE"
+              className="object-cover object-center h-48"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
+          <div className="mx-10">
+            <h3 className="text-xl font-bold">CoMPuTE</h3>
+            <p className="text-base opacity-50">University of Oxford.</p>
+          </div>
+        </div>
+        {/* Fourth Item */}
+        <div className="flex flex-col justify-center">
+          <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+            <Image
+              src="/images/cfads.svg"
+              alt="The Center for Advanced Design Studies"
+              className="object-cover object-center h-48"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
+          <div className="mx-10">
+            <h3 className="text-xl font-bold">The Center for Advanced Design Studies</h3>
+            <p className="text-base opacity-50">Design Consultancy. Palo Alto, CA USA</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Third Column */}
+      <div className="grid grid-cols-2 gap-10">
+        {/* Fifth Item */}
+        <div className="flex flex-col justify-center">
+          <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+            <Image
+              src="/images/st-hughs-logo.svg"
+              alt="St Hugh's College"
+              className="object-cover object-center h-48"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
+          <div className="mx-10">
+            <h3 className="text-xl font-bold">St Hugh's College</h3>
+            <p className="text-base opacity-50">University of Oxford</p>
+          </div>
+        </div>
+        {/* Sixth Item */}
+        <div className="flex flex-col justify-center">
+          <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+            <Image
+              src="/images/nihr-arc-logo.png"
+              alt="NIHR ARC OxTV"
+              className="object-cover object-center h-48"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
+          <div className="mx-10">
+            <h3 className="text-xl font-bold">NIHR ARC OxTV</h3>
+            <p className="text-base opacity-50">Oxford and Thames Valley Applied Research Collaboration, NIHR</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Fourth Column */}
+      <div className="grid grid-cols-2 gap-10">
+        {/* Seventh Item */}
+        <div className="flex flex-col justify-center">
+          <div className="mx-10 mb-6 bg-white rounded-lg overflow-hidden shadow-md">
+            <Image
+              src="/images/become-a-sponsor.svg"
+              alt="Become a sponsor"
+              className="object-cover object-center h-48"
+              width={300}
+              height={300}
+              priority
+            />
+          </div>
+          <div className="mx-10">
+            <h3 className="text-xl font-bold">Become a sponsor!</h3>
+            <p className="text-base opacity-50">Be part of this unique AI Event at Oxford.</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+
 </div>
 
 
