@@ -89,11 +89,7 @@ export default function Trainers() {
 
 <div className="flex flex-row justify-center mt-10 space-x-10 max-w-5xl">
 
-import Image from 'next/image';
 
-export default function CardGrid() {
-  return (
-    <>
       {/* First Column */}
       <div className="grid grid-cols-2 gap-10">
         {/* First Item */}
@@ -229,8 +225,6 @@ export default function CardGrid() {
         </div>
       </div>
     </>
-  );
-}
 
 
 </div>
