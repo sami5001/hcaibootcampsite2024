@@ -87,7 +87,7 @@ export default function Trainers() {
       </div>
     </div>
 
-<div className="flex flex-row justify-center mt-10 space-x-10 max-w-5xl">
+
   <div className="grid grid-cols-2 gap-10">
     {/* First Column */}
     <div className="flex flex-col justify-center">
@@ -243,7 +243,7 @@ export default function Trainers() {
       </div>
     </div>
   </div>
-</div>
+
 
 
 
