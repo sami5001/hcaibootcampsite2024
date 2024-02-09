@@ -170,7 +170,7 @@ export default function Trainers() {
         priority
       />
       <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">St Hugh's College</h3>
+        <h3 className="text-xl font-bold mb-2">St Hugh&apos;s College</h3>
         <p className="text-base opacity-50">University of Oxford</p>
       </div>
     </div>
