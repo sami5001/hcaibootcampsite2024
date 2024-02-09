@@ -136,7 +136,7 @@ export default function Trainers() {
   </div>
 
   {/* Third to Seventh Columns */}
-  <div className="grid grid-cols-2 gap-10">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
     {/* Third Item */}
     <div className="flex flex-col justify-center">
       <div className="mx-10 mb-6">
