@@ -93,11 +93,11 @@ export default function Trainers() {
     {/* First Column */}
     <div className="flex flex-col justify-center">
       {/* First Item */}
-      <div className="mx-10 mb-6">
+      <div className="mx-10 mb-6" style={{ height: '200px' }}>
         <Image
           src="/images/AIM-RSF_Logo-white.png"
           alt="The Alan Turing Institute AIM RSF"
-          className="object-cover object-center w-full"
+          className="object-cover object-center h-full"
           priority
         />
       </div>
@@ -113,11 +113,11 @@ export default function Trainers() {
     {/* Second Column */}
     <div className="flex flex-col justify-center">
       {/* Second Item */}
-      <div className="mx-10 mb-6">
+      <div className="mx-10 mb-6" style={{ height: '200px' }}>
         <Image
           src="/images/kestrel-rising-logo.svg"
           alt="Kestrel Rising"
-          className="object-cover object-center w-full"
+          className="object-cover object-center h-full"
           priority
         />
       </div>
@@ -132,11 +132,11 @@ export default function Trainers() {
     </div>
     {/* Third Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6">
+      <div className="mx-10 mb-6" style={{ height: '200px' }}>
         <Image
           src="/compute-logo.svg"
           alt="CoMPuTE"
-          className="object-cover object-center w-full"
+          className="object-cover object-center h-full"
           priority
         />
       </div>
@@ -151,11 +151,11 @@ export default function Trainers() {
     </div>
     {/* Fourth Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6">
+      <div className="mx-10 mb-6" style={{ height: '200px' }}>
         <Image
           src="/images/cfads.svg"
           alt="The Center for Advanced Design Studies"
-          className="object-cover object-center w-full"
+          className="object-cover object-center h-full"
           priority
         />
       </div>
@@ -170,11 +170,11 @@ export default function Trainers() {
     </div>
     {/* Fifth Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6">
+      <div className="mx-10 mb-6" style={{ height: '200px' }}>
         <Image
           src="/images/st-hughs-logo.svg"
           alt="St Hugh's College"
-          className="object-cover object-center w-full"
+          className="object-cover object-center h-full"
           priority
         />
       </div>
@@ -189,11 +189,11 @@ export default function Trainers() {
     </div>
     {/* Sixth Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6">
+      <div className="mx-10 mb-6" style={{ height: '200px' }}>
         <Image
           src="/images/nihr-arc-logo.png"
           alt="NIHR ARC OxTV"
-          className="object-cover object-center w-full"
+          className="object-cover object-center h-full"
           priority
         />
       </div>
@@ -208,11 +208,11 @@ export default function Trainers() {
     </div>
     {/* Seventh Item */}
     <div className="flex flex-col justify-center">
-      <div className="mx-10 mb-6">
+      <div className="mx-10 mb-6" style={{ height: '200px' }}>
         <Image
           src="/images/become-a-sponsor.svg"
           alt="Become a sponsor"
-          className="object-cover object-center w-full"
+          className="object-cover object-center h-full"
           priority
         />
       </div>
@@ -227,6 +227,7 @@ export default function Trainers() {
     </div>
   </div>
 </div>
+
 
 
 
