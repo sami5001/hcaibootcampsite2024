@@ -3,22 +3,26 @@ import Image from 'next/image';
 
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => (
   <div className="max-w-xs mx-auto">
-    <div className="flex items-start max-h-200">
-      <Image
-        src={imageSrc}
-        alt={altText}
-        className="object-contain"
-        width={200}
-        height={200}
-        priority
-      />
-    </div>
-    <div className="p-4">
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-700">{description}</p>
+    <div className="flex flex-col items-start">
+      <div className="flex items-start max-h-200">
+        <Image
+          src={imageSrc}
+          alt={altText}
+          className="object-contain max-h-200"
+          layout="fixed"
+          width={200}
+          height={200}
+          priority
+        />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-semibold mb-2">{title}</h3>
+        <p className="text-sm text-gray-700">{description}</p>
+      </div>
     </div>
   </div>
 );
+
 
 
 
