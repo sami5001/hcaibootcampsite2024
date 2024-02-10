@@ -5,11 +5,11 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="col-span-full sm:col-span-1 flex items-end">
+        <div className="col-span-full sm:col-span-1">
           <Image
             src={imageSrc}
             alt={altText}
-            className="w-full h-auto max-h-48 sm:max-h-96"
+            className="object-cover w-full h-auto max-h-48 sm:max-h-96"
             layout="responsive"
             width={400}
             height={300}
@@ -24,6 +24,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
     </div>
   );
 };
+
 
 
 
