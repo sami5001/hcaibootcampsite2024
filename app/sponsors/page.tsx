@@ -4,32 +4,27 @@ import Image from 'next/image';
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => {
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 h-full overflow-hidden">
-        <div className="relative flex items-end col-span-1 md:col-span-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="flex items-center col-span-full sm:col-span-1">
           <Image
             src={imageSrc}
             alt={altText}
-            className="object-bottom w-full h-48 sm:h-64 max-h-48 sm:max-h-96"
+            className="object-cover object-bottom w-full h-auto max-h-48 sm:max-h-96"
             layout="responsive"
             width={400}
             height={300}
             priority
           />
         </div>
-        <div className="col-span-1 md:col-span-2 p-4 flex flex-col justify-between">
-          <div>
-            <h3 className="text-lg font-semibold mb-2 text-left">
-              {title}
-            </h3>
-            <p className="text-sm text-gray-700 text-left">
-              {description}
-            </p>
-          </div>
+        <div className="p-4 col-span-full sm:col-span-1">
+          <h3 className="text-lg font-semibold mb-2">{title}</h3>
+          <p className="text-sm text-gray-700">{description}</p>
         </div>
       </div>
     </div>
   );
 };
+
 
 
 
