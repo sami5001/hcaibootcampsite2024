@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => {
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
-      <div className="flex flex-col h-full overflow-hidden items-stretch">
+      <div className="flex flex-col h-full overflow-hidden">
         <div className="relative flex items-end h-48 sm:h-64 max-h-96">
           <Image
             src={imageSrc}
@@ -15,7 +15,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
             objectPosition="bottom left"
           />
         </div>
-        <div className="p-4 flex flex-col justify-end">
+        <div className="p-4">
           <h3 className="text-lg font-semibold mb-2">{title}</h3>
           <p className="text-sm text-gray-700">{description}</p>
         </div>
@@ -23,6 +23,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
     </div>
   );
 };
+
 
 
 
