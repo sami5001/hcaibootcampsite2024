@@ -112,7 +112,7 @@ export default function Trainers() {
     </div>
 
     <div className="max-w-5xl w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {/* Items */}
           <Item
             imageSrc="/images/AIM-RSF_Logo-white.png"
@@ -149,6 +149,12 @@ export default function Trainers() {
             altText="NIHR ARC OxTV"
             title="NIHR ARC OxTV"
             description="Oxford and Thames Valley Applied Research Collaboration, NIHR"
+          />
+          <Item
+            imageSrc="/images/become-a-sponsor.svg"
+            altText="Become a sponsor"
+            title="Become a sponsor!"
+            description="Be part of this unique AI Event at Oxford."
           />
           <Item
             imageSrc="/images/become-a-sponsor.svg"
