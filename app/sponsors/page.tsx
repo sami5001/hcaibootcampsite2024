@@ -4,19 +4,19 @@ import Image from 'next/image';
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => {
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
-      <div className="flex flex-col h-full overflow-hidden">
-        <div className="relative flex items-center justify-center">
+      <div className="flex flex-col h-full">
+        <div className="relative flex items-center justify-center h-48 sm:h-64 max-h-48 sm:max-h-96 overflow-hidden">
           <Image
             src={imageSrc}
             alt={altText}
-            className="h-48 sm:h-64 max-h-48 sm:max-h-96"
+            className="w-auto h-auto max-w-full max-h-full"
             layout="responsive"
             width={400}
             height={300}
             priority
           />
         </div>
-        <div className="p-4">
+        <div className="p-4 flex-grow">
           <h3 className="text-lg font-semibold mb-2">{title}</h3>
           <p className="text-sm text-gray-700">{description}</p>
         </div>
@@ -24,15 +24,6 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
     </div>
   );
 };
-
-
-
-
-
-
-
-
-
 
 
 
