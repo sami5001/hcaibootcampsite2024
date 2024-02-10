@@ -9,9 +9,9 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
           <Image
             src={imageSrc}
             alt={altText}
-            className="object-cover w-full h-full"
+            className="w-full h-full"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             objectPosition="bottom left"
           />
         </div>
@@ -23,6 +23,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
     </div>
   );
 };
+
 
 
 
