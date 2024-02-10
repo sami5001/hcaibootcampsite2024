@@ -5,24 +5,30 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 h-full overflow-hidden">
-        <div className="relative flex items-end h-48 sm:h-64 max-h-96">
+        <div className="relative flex items-end col-span-1 md:col-span-2">
           <Image
             src={imageSrc}
             alt={altText}
-            className="w-full h-full"
-            layout="fill"
-            objectFit="contain"
-            objectPosition="bottom left"
+            className="object-cover object-bottom w-full h-48 sm:h-64 max-h-48 sm:max-h-96"
+            layout="responsive"
+            width={400}
+            height={300}
+            priority
           />
         </div>
-        <div className="flex-1 p-4">
-          <h3 className="text-lg font-semibold mb-2 text-left w-full">{title}</h3>
-          <p className="text-sm text-gray-700 text-left w-full">{description}</p>
+        <div className="col-span-1 md:col-span-2 p-4">
+          <h3 className="text-lg font-semibold mb-2 text-left">
+            {title}
+          </h3>
+          <p className="text-sm text-gray-700 text-left">
+            {description}
+          </p>
         </div>
       </div>
     </div>
   );
 };
+
 
 
 
