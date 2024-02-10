@@ -3,16 +3,16 @@ import Image from 'next/image';
 
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => {
   return (
-    <div className="w-full sm:w-1/2 md:w-full lg:w-1/2 xl:w-1/3 p-4">
-      <div className="flex flex-col h-full bg-white dark:bg-black overflow-hidden rounded-lg">
-        <div className="relative h-64">
+    <div className="max-w-full sm:max-w-md mx-auto">
+      <div className="flex flex-col h-full overflow-hidden">
+        <div className="relative flex items-end">
           <Image
             src={imageSrc}
             alt={altText}
-            className="object-contain w-full h-full"
-            layout="fill"
-            objectFit="contain"
-            objectPosition="bottom left"
+            className="object-cover object-bottom w-full h-48 sm:h-64 max-h-48 sm:max-h-96"
+            layout="responsive"
+            width={400}
+            height={300}
             priority
           />
         </div>
@@ -112,7 +112,7 @@ export default function Trainers() {
     </div>
 
     <div className="max-w-5xl w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
           {/* Items */}
           <Item
             imageSrc="/images/AIM-RSF_Logo-white.png"
@@ -127,7 +127,7 @@ export default function Trainers() {
             description="Business Consulting and Services. Minneapolis, MN USA"
           />
           <Item
-            imageSrc="/images/compute-logo.svg"
+            imageSrc="compute-logo.svg"
             altText="CoMPuTE"
             title="CoMPuTE"
             description="University of Oxford."
