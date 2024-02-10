@@ -15,7 +15,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
             objectPosition="bottom left"
           />
         </div>
-        <div className="p-4">
+        <div className="flex-1 p-4">
           <h3 className="text-lg font-semibold mb-2">{title}</h3>
           <p className="text-sm text-gray-700">{description}</p>
         </div>
