@@ -2,12 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => (
-  <div className="flex flex-col max-w-xs mx-auto">
-    <div className="max-h-40 overflow-hidden">
+  <div className="max-w-xs mx-auto">
+    <div className="flex items-start max-h-200">
       <Image
         src={imageSrc}
         alt={altText}
-        className="object-contain w-full"
+        className="object-contain"
         width={200}
         height={200}
         priority
@@ -19,6 +19,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
     </div>
   </div>
 );
+
 
 
 export default function Trainers() {
