@@ -5,7 +5,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
       <div className="flex flex-col h-full">
-        <div className="relative flex items-center justify-center h-48 sm:h-64 max-h-48 sm:max-h-96 overflow-hidden">
+        <div className="relative flex items-center justify-start h-48 sm:h-64 max-h-48 sm:max-h-96 overflow-hidden">
           <Image
             src={imageSrc}
             alt={altText}
@@ -17,8 +17,8 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
           />
         </div>
         <div className="p-4 flex-grow">
-          <h3 className="text-lg font-semibold mb-2">{title}</h3>
-          <p className="text-sm text-gray-700">{description}</p>
+          <h3 className="text-lg font-semibold mb-2 text-left">{title}</h3>
+          <p className="text-sm text-gray-700 text-left">{description}</p>
         </div>
       </div>
     </div>
