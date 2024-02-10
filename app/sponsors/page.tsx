@@ -5,15 +5,14 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
       <div className="flex flex-col h-full overflow-hidden items-stretch">
-        <div className="relative flex items-end">
+        <div className="relative flex items-end h-48 sm:h-64 max-h-96">
           <Image
             src={imageSrc}
             alt={altText}
-            className="object-cover object-bottom w-full h-48 sm:h-64 max-h-48 sm:max-h-96"
-            layout="responsive"
-            width={400}
-            height={300}
-            priority
+            className="object-cover w-full h-full"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="bottom left"
           />
         </div>
         <div className="p-4 flex flex-col justify-end">
@@ -24,6 +23,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
     </div>
   );
 };
+
 
 
 export default function Trainers() {
