@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Item = ({ imageSrc, altText, title, description }) => (
+const Item = ({ imageSrc, altText, title, description }: { imageSrc: string, altText: string, title: string, description: string }) => (
   <div className="mx-10 mb-6 h-full">
     <div className="flex flex-col h-full">
       <div className="max-h-64">
@@ -21,6 +21,7 @@ const Item = ({ imageSrc, altText, title, description }) => (
     </div>
   </div>
 );
+
 
 export default function Trainers() {
   return (
