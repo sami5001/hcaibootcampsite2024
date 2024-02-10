@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => (
   <div className="mx-4 mb-6">
-    <div className="flex flex-col h-full bg-white rounded-lg overflow-hidden shadow-lg">
+    <div className="flex flex-col h-full">
       <div className="max-h-64 overflow-hidden">
         <Image
           src={imageSrc}
@@ -109,7 +109,7 @@ export default function Trainers() {
       </div>
     </div>
 
-<div className="max-w-5xl w-full">
+    <div className="max-w-5xl w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {/* Items */}
           <Item
