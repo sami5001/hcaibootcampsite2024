@@ -9,7 +9,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
           <Image
             src={imageSrc}
             alt={altText}
-            className="object-cover object-bottom w-full h-48 sm:h-64 max-h-48 sm:max-h-96"
+            className="object-bottom h-48 sm:h-64 max-h-48 sm:max-h-96"
             layout="responsive"
             width={400}
             height={300}
