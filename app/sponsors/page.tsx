@@ -1,6 +1,26 @@
 import React from 'react';
 import Image from 'next/image'
 
+const Item = ({ imageSrc, altText, title, description }) => (
+  <div className="mx-10 mb-6 h-full">
+    <div className="flex flex-col h-full">
+      <div className="max-h-64">
+        <Image
+          src={imageSrc}
+          alt={altText}
+          className="object-cover object-center w-full h-full"
+          width={200}
+          height={200}
+          priority
+        />
+      </div>
+      <div className="mx-10">
+        <h3 className={`m-0 mt-4 text-xl font-bold`}>{title}</h3>
+        <p className={`mt-2 text-base opacity-50`}>{description}</p>
+      </div>
+    </div>
+  </div>
+);
 export default function Trainers() {
   return (
    <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -89,85 +109,63 @@ export default function Trainers() {
     </div>
 
 
-const Item = ({ imageSrc, altText, title, description }) => (
-  <div className="mx-10 mb-6 h-full">
-    <div className="flex flex-col h-full">
-      <div className="max-h-64">
-        <img
-          src={imageSrc}
-          alt={altText}
-          className="object-cover object-center w-full h-full"
-        />
-      </div>
-      <div className="mx-10">
-        <h3 className={`m-0 mt-4 text-xl font-bold`}>{title}</h3>
-        <p className={`mt-2 text-base opacity-50`}>{description}</p>
-      </div>
-    </div>
-  </div>
-);
 
-const YourComponent = () => (
-  <div className="max-w-5xl mx-auto">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-      {/* First Column */}
-      <div className="flex flex-col justify-center">
-        {/* First Item */}
-        <Item
-          imageSrc="/images/AIM-RSF_Logo-white.png"
-          altText="The Alan Turing Institute AIM RSF"
-          title="The Alan Turing Institute AIM RSF"
-          description="AI for Multiple Long-term Conditions, Research Support Facility. London, UK"
-        />
-        {/* Second Item */}
-        <Item
-          imageSrc="/images/kestrel-rising-logo.svg"
-          altText="Kestrel Rising"
-          title="Kestrel Rising"
-          description="Business Consulting and Services. Minneapolis, MN USA"
-        />
-        {/* Third Item */}
-        <Item
-          imageSrc="/compute-logo.svg"
-          altText="CoMPuTE"
-          title="CoMPuTE"
-          description="University of Oxford."
-        />
-        {/* Fourth Item */}
-        <Item
-          imageSrc="/images/cfads.svg"
-          altText="The Center for Advanced Design Studies"
-          title="The Center for Advanced Design Studies"
-          description="Design Consultancy. Palo Alto, CA USA"
-        />
-        {/* Fifth Item */}
-        <Item
-          imageSrc="/images/st-hughs-logo.svg"
-          altText="St Hugh's College"
-          title="St Hugh's College"
-          description="University of Oxford"
-        />
-        {/* Sixth Item */}
-        <Item
-          imageSrc="/images/nihr-arc-logo.png"
-          altText="NIHR ARC OxTV"
-          title="NIHR ARC OxTV"
-          description="Oxford and Thames Valley Applied Research Collaboration, NIHR"
-        />
-        {/* Seventh Item */}
-        <Item
-          imageSrc="/images/become-a-sponsor.svg"
-          altText="Become a sponsor"
-          title="Become a sponsor!"
-          description="Be part of this unique AI Event at Oxford."
-        />
+ <div className="max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* First Column */}
+        <div className="flex flex-col justify-center">
+          {/* First Item */}
+          <Item
+            imageSrc="/images/AIM-RSF_Logo-white.png"
+            altText="The Alan Turing Institute AIM RSF"
+            title="The Alan Turing Institute AIM RSF"
+            description="AI for Multiple Long-term Conditions, Research Support Facility. London, UK"
+          />
+          {/* Second Item */}
+          <Item
+            imageSrc="/images/kestrel-rising-logo.svg"
+            altText="Kestrel Rising"
+            title="Kestrel Rising"
+            description="Business Consulting and Services. Minneapolis, MN USA"
+          />
+          {/* Third Item */}
+          <Item
+            imageSrc="/compute-logo.svg"
+            altText="CoMPuTE"
+            title="CoMPuTE"
+            description="University of Oxford."
+          />
+          {/* Fourth Item */}
+          <Item
+            imageSrc="/images/cfads.svg"
+            altText="The Center for Advanced Design Studies"
+            title="The Center for Advanced Design Studies"
+            description="Design Consultancy. Palo Alto, CA USA"
+          />
+          {/* Fifth Item */}
+          <Item
+            imageSrc="/images/st-hughs-logo.svg"
+            altText="St Hugh's College"
+            title="St Hugh's College"
+            description="University of Oxford"
+          />
+          {/* Sixth Item */}
+          <Item
+            imageSrc="/images/nihr-arc-logo.png"
+            altText="NIHR ARC OxTV"
+            title="NIHR ARC OxTV"
+            description="Oxford and Thames Valley Applied Research Collaboration, NIHR"
+          />
+          {/* Seventh Item */}
+          <Item
+            imageSrc="/images/become-a-sponsor.svg"
+            altText="Become a sponsor"
+            title="Become a sponsor!"
+            description="Be part of this unique AI Event at Oxford."
+          />
+        </div>
       </div>
     </div>
-  </div>
-);
-
-export default YourComponent;
-
 
 
 
