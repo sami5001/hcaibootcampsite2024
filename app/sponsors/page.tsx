@@ -1,27 +1,30 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => (
-  <div className="max-w-full sm:max-w-md mx-auto">
-    <div className="flex flex-col h-full bg-white overflow-hidden">
-      <div className="relative flex items-end">
-        <Image
-          src={imageSrc}
-          alt={altText}
-          className="object-cover object-bottom w-full h-48 sm:h-64"
-          layout="responsive"
-          width={400}
-          height={300}
-          priority
-        />
-      </div>
-      <div className="p-4">
-        <h3 className="text-lg font-semibold mb-2">{title}</h3>
-        <p className="text-sm text-gray-700">{description}</p>
+const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => {
+  return (
+    <div className="max-w-full sm:max-w-md mx-auto">
+      <div className="flex flex-col h-full overflow-hidden">
+        <div className="relative flex items-end">
+          <Image
+            src={imageSrc}
+            alt={altText}
+            className="object-cover object-bottom w-full h-48 sm:h-64 max-h-48 sm:max-h-96"
+            layout="responsive"
+            width={400}
+            height={300}
+            priority
+          />
+        </div>
+        <div className="p-4">
+          <h3 className="text-lg font-semibold mb-2">{title}</h3>
+          <p className="text-sm text-gray-700">{description}</p>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
+
 
 
 
