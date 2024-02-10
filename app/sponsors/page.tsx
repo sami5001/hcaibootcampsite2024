@@ -4,19 +4,19 @@ import Image from 'next/image';
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => {
   return (
     <div className="max-w-full sm:max-w-md mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="col-span-full sm:col-span-1">
+      <div className="flex flex-col h-full overflow-hidden">
+        <div className="relative flex items-center justify-center">
           <Image
             src={imageSrc}
             alt={altText}
-            className="object-cover w-full h-auto max-h-48 sm:max-h-96"
+            className="w-full h-48 sm:h-64 max-h-48 sm:max-h-96"
             layout="responsive"
             width={400}
             height={300}
             priority
           />
         </div>
-        <div className="p-4 col-span-full sm:col-span-1">
+        <div className="p-4">
           <h3 className="text-lg font-semibold mb-2">{title}</h3>
           <p className="text-sm text-gray-700">{description}</p>
         </div>
@@ -24,6 +24,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
     </div>
   );
 };
+
 
 
 
