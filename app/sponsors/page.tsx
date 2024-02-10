@@ -2,22 +2,20 @@ import React from 'react';
 import Image from 'next/image';
 
 const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => (
-  <div className="mx-4 mb-6">
-    <div className="flex flex-col h-full">
-      <div className="max-h-64 overflow-hidden">
-        <Image
-          src={imageSrc}
-          alt={altText}
-          className="object-cover object-center w-full"
-          width={200}
-          height={200}
-          priority
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-base text-gray-700">{description}</p>
-      </div>
+  <div className="flex flex-col max-w-xs mx-auto">
+    <div className="max-h-40 overflow-hidden">
+      <Image
+        src={imageSrc}
+        alt={altText}
+        className="object-contain w-full"
+        width={200}
+        height={200}
+        priority
+      />
+    </div>
+    <div className="p-4">
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-sm text-gray-700">{description}</p>
     </div>
   </div>
 );
@@ -125,7 +123,7 @@ export default function Trainers() {
             description="Business Consulting and Services. Minneapolis, MN USA"
           />
           <Item
-            imageSrc="/images/compute-logo.svg"
+            imageSrc="compute-logo.svg"
             altText="CoMPuTE"
             title="CoMPuTE"
             description="University of Oxford."
