@@ -1,22 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Item = ({ imageSrc, altText, title, description }: { imageSrc: string, altText: string, title: string, description: string }) => (
-  <div className="mx-10 mb-6 h-full">
-    <div className="flex flex-col h-full">
-      <div className="max-h-64">
+const Item: React.FC<{ imageSrc: string; altText: string; title: string; description: string; }> = ({ imageSrc, altText, title, description }) => (
+  <div className="mx-4 mb-6">
+    <div className="flex flex-col h-full bg-white rounded-lg overflow-hidden shadow-lg">
+      <div className="max-h-64 overflow-hidden">
         <Image
           src={imageSrc}
           alt={altText}
-          className="object-cover object-center w-full h-full"
+          className="object-cover object-center w-full"
           width={200}
           height={200}
           priority
         />
       </div>
-      <div className="mx-10">
-        <h3 className={`m-0 mt-4 text-xl font-bold`}>{title}</h3>
-        <p className={`mt-2 text-base opacity-50`}>{description}</p>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">{title}</h3>
+        <p className="text-base text-gray-700">{description}</p>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@ const Item = ({ imageSrc, altText, title, description }: { imageSrc: string, alt
 
 export default function Trainers() {
   return (
-   <main className="flex min-h-screen flex-col items-center justify-between p-24">
+   <main className="flex flex-col items-center justify-between min-h-screen p-8">
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
       <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
       <a
@@ -109,51 +109,45 @@ export default function Trainers() {
       </div>
     </div>
 
-        <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* First Item */}
+<div className="max-w-5xl w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          {/* Items */}
           <Item
             imageSrc="/images/AIM-RSF_Logo-white.png"
             altText="The Alan Turing Institute AIM RSF"
             title="The Alan Turing Institute AIM RSF"
             description="AI for Multiple Long-term Conditions, Research Support Facility. London, UK"
           />
-          {/* Second Item */}
           <Item
             imageSrc="/images/kestrel-rising-logo.svg"
             altText="Kestrel Rising"
             title="Kestrel Rising"
             description="Business Consulting and Services. Minneapolis, MN USA"
           />
-          {/* Third Item */}
           <Item
-            imageSrc="/compute-logo.svg"
+            imageSrc="/images/compute-logo.svg"
             altText="CoMPuTE"
             title="CoMPuTE"
             description="University of Oxford."
           />
-          {/* Fourth Item */}
           <Item
             imageSrc="/images/cfads.svg"
             altText="The Center for Advanced Design Studies"
             title="The Center for Advanced Design Studies"
             description="Design Consultancy. Palo Alto, CA USA"
           />
-          {/* Fifth Item */}
           <Item
             imageSrc="/images/st-hughs-logo.svg"
             altText="St Hugh's College"
             title="St Hugh's College"
             description="University of Oxford"
           />
-          {/* Sixth Item */}
           <Item
             imageSrc="/images/nihr-arc-logo.png"
             altText="NIHR ARC OxTV"
             title="NIHR ARC OxTV"
             description="Oxford and Thames Valley Applied Research Collaboration, NIHR"
           />
-          {/* Seventh Item */}
           <Item
             imageSrc="/images/become-a-sponsor.svg"
             altText="Become a sponsor"
