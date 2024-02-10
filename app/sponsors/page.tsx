@@ -30,6 +30,7 @@ const Item: React.FC<{ imageSrc: string; altText: string; title: string; descrip
 
 
 
+
 export default function Trainers() {
   return (
    <main className="flex flex-col items-center justify-between min-h-screen p-8">
