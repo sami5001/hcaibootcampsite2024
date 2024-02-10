@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const Item = ({ imageSrc, altText, title, description }) => (
   <div className="mx-10 mb-6 h-full">
@@ -21,6 +21,7 @@ const Item = ({ imageSrc, altText, title, description }) => (
     </div>
   </div>
 );
+
 export default function Trainers() {
   return (
    <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -104,13 +105,10 @@ export default function Trainers() {
               priority
             />
           </a>
-
       </div>
     </div>
 
-
-
- <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* First Column */}
         <div className="flex flex-col justify-center">
@@ -166,8 +164,6 @@ export default function Trainers() {
         </div>
       </div>
     </div>
-
-
 
     <div className="mb-32 mt-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
       <a
