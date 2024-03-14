@@ -18,7 +18,7 @@ export default function Home() {
             </span>
           </h3>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            By registering your interest.
+            And register your interest.
           </p>
         </a>
         </p>
