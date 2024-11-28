@@ -28,7 +28,7 @@ const Agenda: React.FC = () => {
     { time: '12:30 pm', event: 'Lunch Break' },
     { time: '1:30 pm', event: 'Session 17' },
     { time: '2:15 pm', event: 'Session 18' },
-    { time: '3:00 pm', event: 'Session 19' },
+    { time: '3:00 pm', event: 'Session 19.5' },
     { time: '3:30 pm', event: 'Tea/Coffee Break' },
     { time: '4:00 pm', event: 'Session 20 (Keynote)' },
     { time: '4:45 pm', event: 'Feedback Session' },
