@@ -1,65 +1,90 @@
-import Image from 'next/image'
+// Description: This page displays all trainers data.
+import Image from 'next/image';
+import { getSortedContentData } from '@/lib/content';
+import TrainerCard from '@/app/components/TrainerCard';
 
-export default function Trainers() {
+export default async function Trainers() {
+  // Get all trainers data
+  const allTrainersData = await getSortedContentData('trainers');
+  
   return (
-   <main className="flex flex-col items-center justify-between p-6">
-
-<div className="flex flex-row justify-center mt-10 space-x-10 max-w-5xl">
-  <div className="flex flex-col justify-between w-1/2">
-    <div className="flex justify-center">
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
-        src="/images/sami.webp"
-        alt="Sami Adnan"
-        width={400}
-        height={400}
-        priority
-      />
-    </div>
-    <div className="px-8 py-6 flex-1">
-      <h2 className="mb-3 text-2xl font-semibold">Trainer</h2>
-      <h3 className="m-0 text-xl font-bold">Sami Adnan</h3>
-      <p className="my-3 text-sm opacity-80 font-mono">
-        DPhil Researcher <br />
-        Nuffield Department of Primary Care Health Sciences <br />
-        University of Oxford <br />
-      </p>
-      <p className="my-3 text-base opacity-50">
-        Sami Adnan is a DPhil Candidate at the Nuffield Department of Primary Care Health Sciences, University of Oxford. His research focuses on developing and evaluating artificial intelligence and digital health solutions for mitigating complex healthcare challenges, e.g. multiple long-term conditions. Prior to his research in Oxford, Sami worked as a Research Fellow at Charit&eacute; – University Hospital Berlin, and prior to that as a Healthcare Researcher at Maastricht University, and as an External Consultant with the World Health Organization. Sami has also worked at Apple Inc. for 8 years in different roles ranging from sales and product development to training new employees and designing company-internal solutions.
-      </p>
-    </div>
-  </div>
-  <div className="flex flex-col justify-between w-1/2">
-    <div className="flex justify-center">
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert(10%) p-8 rounded-lg object-center"
-        src="/images/jonathan.webp"
-        alt="Dr Jonathan Edelman"
-        width={400}
-        height={400}
-        priority
-      />
-    </div>
-    <div className="px-8 py-6 flex-1">
-      <h2 className="mb-3 text-2xl font-semibold">Trainer</h2>
-      <h3 className="m-0 text-xl font-bold">Dr Jonathan Edelman</h3>
-      <p className="my-3 text-sm opacity-80 font-mono">
-        Founder & Executive Director <br />
-        Center for Advanced Design Studies, Palo Alto, CA <br />
-        Lecturer, Mechanical Engineering, University of Stanford <br />
-      </p>
-      <p className="my-3 text-base opacity-50">
-        Dr Jonathan Edelman is Founder & Executive Director of the Center for Advanced Design Studies, CA&#59; and Lecturer, Mechanical Engineering at Stanford University. He is a senior design strategist and early-stage product development director with experience playing a leading role in creating breakthrough products for preeminent healthcare, software, and design companies. Jonathan&apos;s professional and academic experience includes working with, facilitating and teaching teams from the around the globe in a wide spectrum of domains including Product Service System Design, User Experience, Interaction Design, Business Innovation, Digital Transformation, Digital Health Design, and FinTech. His design practice has encompassed lighting design, interaction design and programming, product-service-system design, digital health design, designing for the new financial landscape, design for value creation, painting, speaking, teaching, advising and consulting.
-      </p>
-    </div>
-  </div>
-</div>
-<div className="flex justify-center mt-10 max-w-5xl">
-  <p className="mx-10 text-base opacity-50">
-    Together, Sami and Jonathan are developing this bootcamp, tailored to the medical field to train participants on advanced methods in design innovation that will enable multiple stakeholders, regardless of their experience level, to engage in creating prototypes for Medical AI.
-  </p>
-</div>
-
-  </main>
+    <main className="flex flex-col items-center">
+      {/* Hero Section */}
+      <section className="w-full bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-900 dark:to-black py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Meet Our Expert Trainers</h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            Learn from professionals who will guide you through the bootcamp experience
+          </p>
+        </div>
+      </section>
+      
+      {/* Trainers Section */}
+      <section className="w-full py-20 bg-white dark:bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {allTrainersData.length > 0 ? (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              {allTrainersData.map((trainer) => (
+                <div key={trainer.id} className="flex flex-col">
+                  {trainer.image && (
+                    <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-xl dark:shadow-gray-800 mb-8">
+                      <Image
+                        src={trainer.image}
+                        alt={trainer.name}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        className="transition-transform duration-500 hover:scale-105"
+                        priority
+                      />
+                    </div>
+                  )}
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{trainer.name}</h3>
+                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">
+                    <span dangerouslySetInnerHTML={{ __html: trainer.title || '' }} />
+                    {trainer.title && trainer.organization && ', '}
+                    <span dangerouslySetInnerHTML={{ __html: trainer.organization || '' }} />
+                  </p>
+                  <div 
+                    className="prose prose-blue dark:prose-invert text-gray-900 dark:text-gray-100 text-justify [&>p]:mb-4"
+                    dangerouslySetInnerHTML={{ __html: trainer.content }}
+                  />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Trainers Coming Soon</h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                We&apos;re finalizing our trainer lineup. Check back soon for updates!
+              </p>
+            </div>
+          )}
+          
+          <div className="mt-12 p-8 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg dark:shadow-gray-800">
+            <p className="text-xl text-gray-700 dark:text-gray-300 text-center">
+              Together, our trainers have developed this bootcamp, tailored to the medical field to train participants on advanced methods in design innovation that will enable multiple stakeholders, regardless of their experience level, to engage in creating prototypes for Medical AI.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      {/* Call to Action */}
+      <section className="w-full py-16 bg-blue-600 dark:bg-blue-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-white mb-6">Join Our Next Bootcamp</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+            Learn from our expert trainers and facilitators at the upcoming Human-Centered Medical AI Design Bootcamp
+          </p>
+          <a 
+            href="https://forms.office.com/e/HukNaP5vQ6"
+            className="bg-white text-blue-600 dark:bg-blue-800 dark:text-white rounded-full px-8 py-3 text-lg font-medium inline-block transition-all hover:bg-blue-50 dark:hover:bg-blue-700"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register Interest
+          </a>
+        </div>
+      </section>
+    </main>
   )
 }

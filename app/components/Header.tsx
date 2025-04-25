@@ -1,113 +1,148 @@
+// Description: The header component of the website.
 "use client";
 
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import DarkModeToggle from './DarkModeToggle';
 
 export default function Header() {
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <main className="flex flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        {/* Join the Newsletter or Home */}
-        <p className="flex w-auto justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          {pathname === '/' ? (
-            <a
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-white dark:bg-gray-900 shadow-md' 
+        : 'bg-gradient-to-r from-blue-600/80 to-blue-800/80 backdrop-blur-md dark:from-blue-900/90 dark:to-black/90'
+    }`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 md:h-20">
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/oxhcai-logo.svg"
+              alt="HcAI Bootcamp"
+              width={50}
+              height={50}
+              className="h-10 w-auto transition-transform duration-300 hover:scale-105"
+              priority
+            />
+            <span className={`ml-3 text-xl font-semibold tracking-tight ${
+              scrolled ? 'text-gray-800 dark:text-white' : 'text-white'
+            }`}>HcAI Design Bootcamp</span>
+          </Link>
+          
+          {/* Mobile menu and dark mode toggle */}
+          <div className="md:hidden flex items-center gap-2">
+            <DarkModeToggle />
+            <button 
+              onClick={() => setMenuOpen(!menuOpen)}
+              className={`inline-flex items-center justify-center p-2 rounded-md ${
+                scrolled ? 'text-gray-700 dark:text-gray-300' : 'text-white'
+              }`}
+            >
+              <svg className={`h-6 w-6 ${menuOpen ? 'hidden' : 'block'}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg className={`h-6 w-6 ${menuOpen ? 'block' : 'hidden'}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          
+          {/* Desktop navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <nav className="flex space-x-8">
+              {[
+                { name: 'Home', href: '/' },
+                { name: 'Speakers', href: '/speakers' },
+                { name: 'Trainers', href: '/trainers' },
+                { name: 'Activities', href: '/activities' },
+                { name: 'Agenda', href: '/agenda' },
+                { name: 'Sponsors', href: '/sponsors' },
+              ].map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`text-base font-medium transition-colors duration-300 ${
+                    pathname === item.href 
+                      ? scrolled 
+                          ? 'text-blue-600 dark:text-blue-400' 
+                          : 'text-white font-bold'
+                      : scrolled 
+                          ? 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400' 
+                          : 'text-white/90 hover:text-white'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+            
+            <DarkModeToggle />
+            
+            <Link 
               href="https://forms.office.com/e/HukNaP5vQ6"
-              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+              className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-300 hover:shadow-lg ${
+                scrolled 
+                  ? 'bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600' 
+                  : 'bg-white text-blue-600 hover:bg-blue-50 dark:bg-blue-800 dark:text-white dark:hover:bg-blue-700'
+              }`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3 className="text-lg font-semibold">
-                Join the newsletter{' '}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </h3>
-              <p className="m-0 max-w-[30ch] text-sm opacity-50">
-                And register your interest.
-              </p>
-            </a>
-          ) : (
-            <a
-              href="/"
-              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-              rel="noopener noreferrer"
-            >
-              <h3 className="text-lg font-semibold">
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  &lt;-
-                </span>{' '}
-                Home
-              </h3>
-            </a>
-          )}
-        </p>
-
-        {/* Logos */}
-        <div className="flex h-auto w-auto items-center justify-center gap-4 bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto"
-            href="https://www.arc-oxtv.nihr.ac.uk/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/funded-by-nihr-logo.png"
-              alt="Funded by NIHR Logo"
-              className="dark:invert(10%)"
-              width={200}
-              height={48}
-              priority
-            />
-          </a>
-          <a
-            className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto"
-            href="https://www.phc.ox.ac.uk/research/groups-and-centres/medical-statistics/COMPUTE"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/compute-logo.svg"
-              alt="CoMPuTE"
-              className="dark:invert(10%)"
-              width={100}
-              height={100}
-              priority
-            />
-          </a>
-          <a
-            className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto"
-            href="https://github.com/OxHcAI/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/oxhcai-logo.svg"
-              alt="Oxford Human-Centred AI"
-              className="dark:invert(10%)"
-              width={100}
-              height={100}
-              priority
-            />
-          </a>
-          <a
-            className="pointer-events-none flex place-items-center gap-2 lg:pointer-events-auto"
-            href="https://www.phc.ox.ac.uk/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/oxford-logo.svg"
-              alt="University of Oxford"
-              className="dark:grayscale"
-              width={100}
-              height={100}
-              priority
-            />
-          </a>
+              Register Now
+            </Link>
+          </div>
         </div>
       </div>
-    </main>
+      
+      {/* Mobile menu */}
+      <div className={`md:hidden ${menuOpen ? 'block' : 'hidden'} bg-white dark:bg-gray-900 shadow-md`}>
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          {[
+            { name: 'Home', href: '/' },
+            { name: 'Speakers', href: '/speakers' },
+            { name: 'Trainers', href: '/trainers' },
+            { name: 'Activities', href: '/activities' },
+            { name: 'Agenda', href: '/agenda' },
+            { name: 'Sponsors', href: '/sponsors' },
+          ].map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                pathname === item.href 
+                  ? 'text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-900/30'
+                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30'
+              }`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.name}
+            </Link>
+          ))}
+          <Link 
+            href="https://forms.office.com/e/HukNaP5vQ6"
+            className="block w-full text-center bg-blue-600 dark:bg-blue-700 text-white rounded-full px-5 py-2 text-base font-medium mt-4"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+          >
+            Register Now
+          </Link>
+        </div>
+      </div>
+    </header>
   );
 }
