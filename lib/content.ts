@@ -14,6 +14,7 @@ interface ContentData {
   title?: string;
   organization?: string;
   image?: string;
+  imageUrl?: string; // Add imageUrl property to match markdown files
   type?: string;
   tags?: string[];
   content: string;
