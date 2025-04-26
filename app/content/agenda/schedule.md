@@ -88,7 +88,7 @@ items:
         event: "Anecdotes of Community Engagement"
         type: "lecture"
         details: "Real-world experiences of community engagement in healthcare AI projects"
-        speaker: "Dr. Wahid Khan, Community Health Researcher"
+        speaker: "Wahid Khan, DPhil Researcher, School of Geography and the Environment, University of Oxford"
       - time: "11:15 AM - 11:30 PM"
         event: "Creating Fast and Abstract Prototypes"
         type: "training"
