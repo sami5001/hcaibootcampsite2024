@@ -10,7 +10,7 @@ interface LectureProps {
   presenterName: string;
   presenterTitle: string;
   presenterOrg: string;
-  imageUrl: string;
+  image: string; // Changed from imageUrl to image
   tags?: string[];
 }
 
@@ -20,7 +20,7 @@ const Lecture: React.FC<LectureProps> = ({
   presenterName, 
   presenterTitle,
   presenterOrg,
-  imageUrl,
+  image, // Changed from imageUrl to image
   tags
 }) => {
   return (
@@ -28,7 +28,7 @@ const Lecture: React.FC<LectureProps> = ({
       <div className="flex flex-col">
         <div className="relative h-64 w-full mb-4 rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={imageUrl}
+            src={image} // Changed from imageUrl to image
             alt={title}
             fill
             style={{ objectFit: 'cover' }}
@@ -103,7 +103,7 @@ export default async function Lectures() {
                 presenterName={lecture.presenterName as string}
                 presenterTitle={lecture.presenterTitle as string}
                 presenterOrg={lecture.presenterOrg as string}
-                imageUrl={lecture.imageUrl as string}
+                image={lecture.image as string} // Changed from imageUrl to image
                 tags={lecture.tags as string[]}
               />
             ))}
@@ -124,7 +124,7 @@ export default async function Lectures() {
                   presenterName={lecture.presenterName as string}
                   presenterTitle={lecture.presenterTitle as string}
                   presenterOrg={lecture.presenterOrg as string}
-                  imageUrl={lecture.imageUrl as string}
+                  image={lecture.image as string} // Changed from imageUrl to image
                   tags={lecture.tags as string[]}
                 />
               ))}
