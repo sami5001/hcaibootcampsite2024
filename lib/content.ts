@@ -20,6 +20,11 @@ interface ContentData {
   contentHtml?: string;
   order?: number;
   featured?: boolean;
+  // Additional fields for lectures
+  presenterName?: string;
+  presenterTitle?: string;
+  presenterOrg?: string;
+  youtubeVideoUrl?: string;
 }
 
 export async function getSortedContentData(folder: string): Promise<ContentData[]> {

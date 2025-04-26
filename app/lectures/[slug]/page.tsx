@@ -20,7 +20,7 @@ export default async function LecturePage({ params }: { params: { slug: string }
         <div className="relative w-full h-96">
           <div className="absolute inset-0 z-0">
             <Image
-              src={lecture.imageUrl as string || '/images/lectures/default.jpg'}
+              src={lecture.image as string || '/images/lectures/default.jpg'}
               alt={lecture.title as string}
               fill
               style={{ objectFit: 'cover' }}
