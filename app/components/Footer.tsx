@@ -47,6 +47,7 @@ export default function Footer() {
                 { name: 'Speakers', href: '/speakers' },
                 { name: 'Trainers', href: '/trainers' },
                 { name: 'Activities', href: '/activities' },
+                { name: 'Lectures', href: '/lectures' },
                 { name: 'Agenda', href: '/agenda' },
                 { name: 'Sponsors', href: '/sponsors' },
               ].map((item) => (

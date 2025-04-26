@@ -54,7 +54,7 @@ export default function ParallaxHero({
       
       {/* Content overlay */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="relative w-64 h-64 mb-6 mx-auto">
+        <div className="relative w-96 h-96 mb-6 mx-auto">
           <Image
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
             src={logoSrc}
@@ -79,4 +79,4 @@ export default function ParallaxHero({
       </div>
     </section>
   );
-} 
+}

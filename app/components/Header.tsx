@@ -11,13 +11,37 @@ export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    
+    // Check if dark mode is enabled
+    const checkDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains('dark'));
+    };
+    
+    // Initial check
+    checkDarkMode();
+    
+    // Set up observer for dark mode changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class') {
+          checkDarkMode();
+        }
+      });
+    });
+    
+    observer.observe(document.documentElement, { attributes: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      observer.disconnect();
+    };
   }, []);
 
   return (
@@ -27,20 +51,44 @@ export default function Header() {
         : 'bg-gradient-to-r from-blue-600/80 to-blue-800/80 backdrop-blur-md dark:from-blue-900/90 dark:to-black/90'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
-          {/* Logo */}
+        <div className="flex justify-between items-center h-20 md:h-24">
+          {/* Logos */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/oxhcai-logo.svg"
-              alt="HcAI Bootcamp"
-              width={50}
-              height={50}
-              className="h-10 w-auto transition-transform duration-300 hover:scale-105"
-              priority
-            />
-            <span className={`ml-3 text-xl font-semibold tracking-tight ${
+            <div className="flex items-center">
+              {/* Oxford Logo - Different versions for light/dark mode */}
+              <Image
+                src={isDarkMode ? "/oxford-logo-dark.svg" : "/oxford-logo.svg"}
+                alt="University of Oxford"
+                width={40}
+                height={40}
+                className="h-16 w-auto"
+                priority
+              />
+              
+              {/* Compute Logo */}
+              <Image
+                src="/compute-logo.svg"
+                alt="Compute"
+                width={40}
+                height={40}
+                className="h-16 w-auto ml-3"
+                priority
+              />
+              
+              {/* HcAI Logo */}
+              <Image
+                src="/oxhcai-logo.svg"
+                alt="HcAI Bootcamp"
+                width={50}
+                height={50}
+                className="h-16 w-auto ml-3"
+                priority
+              />
+            </div>
+            
+            <span className={`ml-3 text-xl font-semibold tracking-tight whitespace-nowrap ${
               scrolled ? 'text-gray-800 dark:text-white' : 'text-white'
-            }`}>HcAI Design Bootcamp</span>
+            }`}></span>
           </Link>
           
           {/* Mobile menu and dark mode toggle */}
@@ -69,6 +117,7 @@ export default function Header() {
                 { name: 'Speakers', href: '/speakers' },
                 { name: 'Trainers', href: '/trainers' },
                 { name: 'Activities', href: '/activities' },
+                { name: 'Lectures', href: '/lectures' },
                 { name: 'Agenda', href: '/agenda' },
                 { name: 'Sponsors', href: '/sponsors' },
               ].map((item) => (
@@ -94,7 +143,7 @@ export default function Header() {
             
             <Link 
               href="https://forms.office.com/e/HukNaP5vQ6"
-              className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-300 hover:shadow-lg ${
+              className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-300 hover:shadow-lg whitespace-nowrap ${
                 scrolled 
                   ? 'bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600' 
                   : 'bg-white text-blue-600 hover:bg-blue-50 dark:bg-blue-800 dark:text-white dark:hover:bg-blue-700'
@@ -116,6 +165,7 @@ export default function Header() {
             { name: 'Speakers', href: '/speakers' },
             { name: 'Trainers', href: '/trainers' },
             { name: 'Activities', href: '/activities' },
+            { name: 'Lectures', href: '/lectures' },
             { name: 'Agenda', href: '/agenda' },
             { name: 'Sponsors', href: '/sponsors' },
           ].map((item) => (

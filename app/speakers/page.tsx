@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getSortedContentData, getContentByType } from '@/lib/content';
+import { getTagBadgeClasses } from '@/lib/tagUtils';
 import SpeakerCard from '@/app/components/SpeakerCard';
 
 export const dynamic = 'force-dynamic';
@@ -57,7 +58,10 @@ export default async function Speakers() {
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {speaker.tags && speaker.tags.map((tag: string) => (
-                      <span key={tag} className="bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded border border-blue-400 dark:border-blue-700">
+                      <span 
+                        key={tag} 
+                        className={getTagBadgeClasses(tag)}
+                      >
                         {tag}
                       </span>
                     ))}
@@ -107,7 +111,10 @@ export default async function Speakers() {
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {speaker.tags && speaker.tags.map((tag: string) => (
-                      <span key={tag} className="bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded border border-blue-400 dark:border-blue-700">
+                      <span 
+                        key={tag} 
+                        className={getTagBadgeClasses(tag)}
+                      >
                         {tag}
                       </span>
                     ))}
