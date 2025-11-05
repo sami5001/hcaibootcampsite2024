@@ -1,6 +1,5 @@
 // /app/activities/page.tsx
 import Image from 'next/image';
-import { getYamlData } from '@/lib/yaml';
 
 export default function Activities() {
   // This would ideally come from a YAML file
