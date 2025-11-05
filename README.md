@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Human-Centered Medical AI Design Bootcamp 2024
+
+This is the official website for the Oxford University Human-Centered AI (HcAI) Design Bootcamp 2024, a comprehensive educational program focused on medical AI design with human-centered principles.
+
+## About the Bootcamp
+
+The HcAI Design Bootcamp brings together experts in medical AI, design thinking, ethics, and healthcare innovation. This 5-day intensive program features keynote speakers, hands-on workshops, and collaborative activities designed to equip participants with the skills to create ethical, effective, and human-centered medical AI solutions.
+
+## Technology Stack
+
+This website is built with:
+
+- **Framework:** [Next.js 14](https://nextjs.org/) with React 18
+- **Language:** TypeScript 5.3
+- **Styling:** Tailwind CSS 3.4 with Typography plugin
+- **Content:** Markdown files with YAML frontmatter
+- **Deployment:** Vercel
+
+## Prerequisites
+
+- Node.js 18.17 or higher
+- npm, yarn, pnpm, or bun
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd hcaibootcampsite2024
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the website.
+
+## Project Structure
+
+```
+/app
+├── /components/        # Reusable React components
+├── /content/          # Markdown content files
+│   ├── /speakers/     # Speaker profiles
+│   ├── /trainers/     # Trainer profiles
+│   ├── /lectures/     # Lecture descriptions
+│   ├── /sponsors/     # Sponsor information
+│   └── /agenda/       # Event schedule
+├── /speakers/         # Speakers pages
+├── /trainers/         # Trainers pages
+├── /lectures/         # Lectures pages
+├── /sponsors/         # Sponsors pages
+├── /activities/       # Activities page
+├── /agenda/           # Agenda page
+└── page.tsx           # Home page
+
+/lib
+├── content.ts         # Content loading utilities
+└── tagUtils.ts        # Tag styling utilities
+
+/public
+└── /images/          # Static images and logos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Markdown-based Content Management:** All content is stored in markdown files with YAML frontmatter for easy editing
+- **Dark Mode:** Full dark mode support with system preference detection and localStorage persistence
+- **Responsive Design:** Mobile-first design that works seamlessly across all devices
+- **Dynamic Routing:** Automatic page generation for speakers, trainers, lectures, and sponsors
+- **Type-safe:** Built with TypeScript for enhanced developer experience and reliability
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Adding Content
 
-## Learn More
+To add or modify content, edit the markdown files in the `/app/content/` directory. See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on content formatting.
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The site is configured for deployment on [Vercel](https://vercel.com). Any push to the main branch will trigger an automatic deployment.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on how to add or modify content.
+
+## License
+
+This project is maintained by the University of Oxford Human-Centered AI initiative.
