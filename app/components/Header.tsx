@@ -111,41 +111,63 @@ export default function Header() {
           
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <nav className="flex space-x-8">
-              {[
-                { name: 'Home', href: '/' },
-                { name: 'Speakers', href: '/speakers' },
-                { name: 'Trainers', href: '/trainers' },
-                { name: 'Activities', href: '/activities' },
-                { name: 'Lectures', href: '/lectures' },
-                { name: 'Agenda', href: '/agenda' },
-                { name: 'Sponsors', href: '/sponsors' },
-              ].map((item) => (
+            <nav className="flex flex-col gap-2">
+              {/* First row of navigation */}
+              <div className="flex space-x-8">
+                {[
+                  { name: 'Home', href: '/' },
+                  { name: 'Speakers', href: '/speakers' },
+                  { name: 'Trainers', href: '/trainers' },
+                  { name: 'Activities', href: '/activities' },
+                  { name: 'Lectures', href: '/lectures' },
+                  { name: 'Agenda', href: '/agenda' },
+                  { name: 'Sponsors', href: '/sponsors' },
+                ].map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`text-base font-medium transition-colors duration-300 ${
+                      pathname === item.href
+                        ? scrolled
+                            ? 'text-blue-600 dark:text-blue-400'
+                            : 'text-white font-bold'
+                        : scrolled
+                            ? 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                            : 'text-white/90 hover:text-white'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Second row with xAI Workshop */}
+              <div className="flex space-x-8">
                 <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`text-base font-medium transition-colors duration-300 ${
-                    pathname === item.href 
-                      ? scrolled 
-                          ? 'text-blue-600 dark:text-blue-400' 
+                  href="/xai-workshop"
+                  className={`text-base font-medium transition-colors duration-300 flex items-center ${
+                    pathname === '/xai-workshop'
+                      ? scrolled
+                          ? 'text-purple-600 dark:text-purple-400'
                           : 'text-white font-bold'
-                      : scrolled 
-                          ? 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400' 
+                      : scrolled
+                          ? 'text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400'
                           : 'text-white/90 hover:text-white'
                   }`}
                 >
-                  {item.name}
+                  <span className="bg-purple-600/20 dark:bg-purple-400/20 px-2 py-0.5 rounded text-xs mr-2">NEW</span>
+                  xAI Workshop
                 </Link>
-              ))}
+              </div>
             </nav>
-            
+
             <DarkModeToggle />
-            
-            <Link 
+
+            <Link
               href="https://forms.office.com/e/HukNaP5vQ6"
               className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-300 hover:shadow-lg whitespace-nowrap ${
-                scrolled 
-                  ? 'bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600' 
+                scrolled
+                  ? 'bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600'
                   : 'bg-white text-blue-600 hover:bg-blue-50 dark:bg-blue-800 dark:text-white dark:hover:bg-blue-700'
               }`}
               target="_blank"
@@ -173,7 +195,7 @@ export default function Header() {
               key={item.name}
               href={item.href}
               className={`block px-3 py-2 rounded-md text-base font-medium ${
-                pathname === item.href 
+                pathname === item.href
                   ? 'text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-900/30'
                   : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30'
               }`}
@@ -182,6 +204,23 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
+
+          {/* Divider */}
+          <div className="my-2 border-t border-gray-200 dark:border-gray-700"></div>
+
+          {/* xAI Workshop with NEW badge */}
+          <Link
+            href="/xai-workshop"
+            className={`block px-3 py-2 rounded-md text-base font-medium flex items-center ${
+              pathname === '/xai-workshop'
+                ? 'text-purple-600 bg-purple-50 dark:text-purple-400 dark:bg-purple-900/30'
+                : 'text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/30'
+            }`}
+            onClick={() => setMenuOpen(false)}
+          >
+            <span className="bg-purple-600/20 dark:bg-purple-400/20 px-2 py-0.5 rounded text-xs mr-2">NEW</span>
+            xAI Workshop
+          </Link>
           <Link 
             href="https://forms.office.com/e/HukNaP5vQ6"
             className="block w-full text-center bg-blue-600 dark:bg-blue-700 text-white rounded-full px-5 py-2 text-base font-medium mt-4"
